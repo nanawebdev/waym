@@ -2,10 +2,10 @@ import MainButton from './mainButton'
 
 export default function Start() {
     const quests = [
-        { id: 1, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: '/sm.jpg' },
-        { id: 2, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: '/sm.jpg' },
-        { id: 3, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: '/sm.jpg' },
-        { id: 4, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: '/sm.jpg' },
+        { id: 1, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: './sm.jpg' },
+        { id: 2, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: './sm.jpg' },
+        { id: 3, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: './sm.jpg' },
+        { id: 4, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: './sm.jpg' },
     ]
     const renderQuestCard = () => {
         return quests.map(v => {
