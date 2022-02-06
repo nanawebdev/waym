@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  basePath: '/waym',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
