@@ -1,0 +1,29 @@
+.team ul {
+  display: flex;
+  color: $primary-green;
+  margin: 0;
+  padding: 0;
+}
+
+.team h3 {
+  color: $primary-green;
+}
+
+.team li {
+  max-width: 384px;
+}
+
+.team p {
+max-width: 55%;
+  margin: 0;
+}
+
+.team h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.team {
+    padding-bottom: 120px;
+    background-image: url('./../public/team-bg.svg');
+}

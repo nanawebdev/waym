@@ -1,0 +1,36 @@
+.megaphone {
+  display: flex;
+  position: relative;
+  width: 697px;
+  height: 260px;
+  flex-shrink: 0;
+}
+
+.megaphone__img {
+  position: absolute;
+}
+
+.megaphone__img--1 {
+  top: 32px;
+  left: 0;
+}
+
+.megaphone__img--2 {
+  top: 88px;
+  left: 195px;
+}
+
+.megaphone__img--3 {
+  top: 134px;
+  left: 269px;
+}
+
+.megaphone__img--4 {
+  top: 0;
+  left: 344px;
+}
+
+.megaphone__img--5 {
+  right: 0;
+  bottom: 0;
+}

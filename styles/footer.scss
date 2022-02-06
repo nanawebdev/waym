@@ -1,0 +1,78 @@
+.footer {
+  padding: 120px 0;
+  background-color: $basic-white;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.footer input,
+.footer button {
+  border: 1px solid $primary-dark;
+  color: $primary-dark;
+  padding: 48px 40px;
+  min-width: 560px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 8px 0;
+}
+
+.footer input::placeholder {
+  color: $primary-dark;
+}
+
+.footer button {
+  background-color: transparent;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+
+.footer section {
+  font-family: 'Roboto', monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 122px;
+}
+
+.footer a {
+  margin: 20px 0;
+  color: $light-blue;
+}
+
+.footer__wrapper {
+  width: 560px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.footer__wrapper span {
+  color: $light-grey;
+}
+
+.footer__line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: $extra-light-grey;
+  margin: 0 24px;
+}
+
+.footer__wrapper svg + svg {
+  margin-left: 24px;
+}
+
+.footer__copyright {
+    margin-top: auto;
+    color: $light-grey;
+}

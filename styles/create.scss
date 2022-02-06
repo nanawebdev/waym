@@ -1,0 +1,40 @@
+.create {
+
+  color: $create-color;
+  background-image: url('./../public/create-bg.svg');
+}
+
+.create .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 52px;
+}
+
+.create h3 {
+  display: block;
+  margin: 0;
+  margin-bottom: 170px;
+}
+
+.create p {
+  margin-bottom: 8px;
+}
+
+.create .section__wrapper {
+  flex-shrink: 0;
+  flex-grow: 1;
+  max-width: 375px;
+  align-self: flex-end;
+
+}
+
+.create__animation {
+  margin-left: auto;
+  margin-top: 62px;
+  margin-right: 5px;
+}
+
+.create .section__text {
+  max-width: 360px;
+}

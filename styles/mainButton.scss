@@ -1,0 +1,54 @@
+.main-button {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 20px;
+
+  // background-color: $primary-dark;
+}
+
+.main-button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: rotateBg;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.main-button a {
+  padding: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+}
+
+.main-button__center {
+  z-index: 2;
+  border-radius: 50%;
+  // background-color: $primary-dark;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@keyframes rotateBg {
+  100% {
+    transform: rotate(360deg);
+  }
+}

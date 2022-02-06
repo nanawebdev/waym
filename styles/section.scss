@@ -1,0 +1,36 @@
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section h3 {
+  font-family: 'Roboto', monospace, sans-serif;;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  margin-top: 0;
+}
+
+.section__text {
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 412px;
+}
+
+.section__wrapper {
+  max-width: 50%;
+}
+
+.section__tag {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.about {
+  color: $about-color;
+  background-image: url('./../public/about-bg.svg');
+}
+
+.about h3 {
+    margin-bottom: 106px;
+}
+
+.about .section__text + .section__text {
+    margin-top: 20px;
+}
+
+.about .container {
+  // flex-direction: row;
+}
