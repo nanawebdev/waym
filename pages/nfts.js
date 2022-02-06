@@ -3,7 +3,7 @@ import MainButton from "../components/mainButton"
 
 export default function Nfts() {
   return (
-
+    <div>ведутся работы</div>
   )
 }
 
