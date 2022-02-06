@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import MainButton from './mainButton'
 
 export default function Start() {
@@ -13,7 +12,7 @@ export default function Start() {
             return (
                 <li key={v.id}>
                     <div className='start__image'>
-                        <Image src={v.imgSrc} width={230} height={132} alt={v.title} />
+                        <img src={v.imgSrc} width={230} height={132} alt={v.title} />
                     </div>
                     <div className="start__text">
                         <h4>{v.title}</h4>

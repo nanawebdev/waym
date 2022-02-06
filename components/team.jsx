@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Team() {
     const team = [
         { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience <br /> in programming and PM', imgSrc: '/sm.jpg' },
@@ -10,7 +8,7 @@ export default function Team() {
         return team.map(v => {
             return (
                 <li key={v.id}>
-                    <Image src={v.imgSrc} width={384} height={384} alt={v.name} />
+                    <img src={v.imgSrc} width={384} height={384} alt={v.name} />
                     <h4>{v.name}</h4>
                     <p className='section__text'>{v.job}</p>
                     <p className='section__text'>{v.description}</p>
