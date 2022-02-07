@@ -3,22 +3,18 @@
   padding-bottom: 56px;
 }
 
-.explore__text p:first-child {
-  font-size: 20px;
-  line-height: 40px;
+.explore .section__wrapper {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.section.explore h3 {
+  margin-bottom: 154px;
+  display: block;
+  line-height: 56px;
 }
 
 .explore .section__wrapper {
-    position: relative;
-    z-index: 1;
+  margin-top: 24%;
 }
-
-.explore h3 {
-    margin-bottom: 154px;
-    display: block;
-}
-
-.explore.section h3 {
- line-height: 56px;
-}
-

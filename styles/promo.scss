@@ -1,13 +1,6 @@
-.promo {
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 72px;
-  overflow: hidden;
-}
-
 .promo__wrapper {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 0;
   transform: translateY(-50%);
   text-stroke: 1px white;
@@ -15,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   z-index: 100;
+  width: 100%;
 }
 
 .promo .section__text {
@@ -26,7 +20,7 @@
   color: transparent;
   animation-name: titleTranslate;
   animation-timing-function: linear;
-  animation-duration: 10s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   font-weight: 900;
   font-size: 300px;
@@ -37,8 +31,23 @@
   padding: 0 80px;
 }
 
-.promo__wrapper .promo__title:last-child {
-  animation-delay: 10s;
+// .promo__wrapper .promo__title:last-child {
+//   // animation-delay: 10s;
+// }
+
+.section.promo .container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 72px;
+}
+
+.section.promo .section__wrapper {
+  margin-top: auto;
+}
+
+.section.promo {
+  background-position: 0 0;
 }
 
 @keyframes titleTranslate {

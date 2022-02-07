@@ -1,3 +1,7 @@
+.team {
+  background-image: url("./../public/team-bg.svg");
+}
+
 .team ul {
   display: flex;
   color: $primary-green;
@@ -5,25 +9,36 @@
   padding: 0;
 }
 
-.team h3 {
-  color: $primary-green;
+.team .container {
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 16%;
 }
 
-.team li {
-  max-width: 384px;
+.team h3 {
+  color: $primary-green;
+  margin-bottom: 40px;
+}
+
+
+.team li + li {
+  margin-left: 24px;
 }
 
 .team p {
-max-width: 55%;
   margin: 0;
 }
 
 .team h4 {
   font-size: 24px;
   line-height: 32px;
+  margin-top: 21px;
+  margin-bottom: 8px;
+  font-family: "Roboto", monospace, sans-serif;
 }
 
-.team {
-    padding-bottom: 120px;
-    background-image: url('./../public/team-bg.svg');
+.section.team {
+  height: auto;
 }

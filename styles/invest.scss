@@ -1,31 +1,25 @@
 .invest {
-    padding-bottom: 68px;
     color: $primary-green;
     background-image: url("./../public/invest-bg.svg");
 }
 
 .invest .container {
-    display: flex;
-    flex-direction: row;
-    // align-items: center;
-    justify-content: flex-start;
+    padding-bottom: 56px;
+    position: relative;
 }
 
 .invest h3 {
     margin-bottom: 170px;
 }
 
-.invest__animation {
+.invest .section__media {
     position: absolute;
-    top: 33%;
-    left: 40.3%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-22%,-50%);
 }
 
-.invest .section__wrapper {
-    align-self: flex-end;
+.section.invest .section__wrapper {
     width: 50%;
-}
-
-.invest .section__tag {
-    margin-bottom: 7px;
+    margin-top: 25%;
 }

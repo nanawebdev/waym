@@ -11,6 +11,26 @@
     margin-top: 20px;
 }
 
+.about .section__wrapper {
+  margin-top: 31%;
+}
+
+.about .section__media  {
+  position: absolute;
+  top: 231px;
+  left: 53.5%;
+  transform: translateX(-50%);
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.about p:nth-child(2n) {
+  margin-bottom: 0;
+}
+
 .about .container {
-  // flex-direction: row;
+  padding-bottom: 40px;
 }

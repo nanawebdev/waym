@@ -4,15 +4,13 @@
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
-  bottom: 92px;
+  bottom: 42px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: 20px;
-
-  // background-color: $primary-dark;
 }
 
 .main-button__bg {
@@ -27,24 +25,20 @@
   animation-iteration-count: infinite;
 }
 
-.main-button a {
-  padding: 14px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
-}
-
 .main-button__center {
   z-index: 2;
   border-radius: 50%;
-  // background-color: $primary-dark;
   width: 130px;
   height: 130px;
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
 }
 
 @keyframes rotateBg {

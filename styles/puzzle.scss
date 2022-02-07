@@ -1,0 +1,35 @@
+.puzzle {
+  position: relative;
+  width: 540px;
+  height: 490px;
+}
+
+
+.puzzle__item {
+  position: absolute;
+}
+
+.puzzle__item--1 {
+    top: 82px;
+    left: 78px;
+}
+
+.puzzle__item--2 {
+  top: 150px;
+  right: 0;
+}
+
+.puzzle__item--3 {
+    top: 0;
+    left: 235px;;
+}
+
+.puzzle__item--4 {
+    top: 52px;
+    left: 57px;
+}
+
+.puzzle__item--5 {
+  bottom: 0;
+  left: 0;
+}

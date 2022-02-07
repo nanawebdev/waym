@@ -1,8 +1,8 @@
 export default function Team() {
     const team = [
-        { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience <br /> in programming and PM', imgSrc: './sm.jpg' },
-        { id: 2, name: 'Vitaly Vylgin', job: 'CDO', description: '10 years of experience in programming', imgSrc: './sm.jpg' },
-        { id: 3, name: 'Olga Kazimirskaya', job: 'Main script writer', description: 'Author of the game metaverse concept and the central plot line', imgSrc: './sm.jpg' },
+        { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience <br> in programming and PM', imgSrc: './Minin.jpg' },
+        { id: 2, name: 'Vitaly Vylgin', job: 'CDO', description: '10 years of experience <br> in programming', imgSrc: './Vylgin.jpg' },
+        { id: 3, name: 'Olga Kazimirskaya', job: 'Main script writer', description: 'Author of the game metaverse <br> concept and the central plot <br> line', imgSrc: './Olga.jpg' },
     ]
     const renderTeam = () => {
         return team.map(v => {
@@ -11,7 +11,7 @@ export default function Team() {
                     <img src={v.imgSrc} width={384} height={384} alt={v.name} />
                     <h4>{v.name}</h4>
                     <p className='section__text'>{v.job}</p>
-                    <p className='section__text'>{v.description}</p>
+                    <p className='section__text' dangerouslySetInnerHTML={{__html: v.description}}></p>
                 </li>
             )
         })

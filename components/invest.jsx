@@ -1,23 +1,20 @@
 import MainButton from "./mainButton";
 import Rocket from "./rocket";
+import Section from "./Section";
 
 export default function Invest() {
     return (
-        <section className="invest section">
-            <div className="container">
-                <div className="section__wrapper">
-                    <p className="section__tag">Invest</p>
-                    <h3>Support the economics based on intellectual property</h3>
-                    <div className="section__text">Use our quest builder to create stories easy and fast. Release your creative potential and get the reward.</div>
-                </div>
+        <Section
+            sectionClass="invest"
+            tag="Invest"
+            buttonTitle="About <br> WAYM <br> Tokens"
+            buttonColor="#3AA76D"
+            buttonHref="/token"
+            title="Support the economics <br> based on intellectual <br> property"
+            text="Use our quest builder <br> to create stories easy and fast. <br> Release your creative potential <br> and get the reward."
 
-                <div className="invest__animation">
-                <Rocket />
-                </div>
-                <MainButton title="About WAYM Tokens" stroke="#3AA76D" href="/token" />
-               
-            </div>
-
-        </section>
+        >
+            <Rocket />
+        </Section>
     )
 }

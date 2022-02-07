@@ -4,6 +4,7 @@ import Explore from '../components/explore'
 import Invest from '../components/invest'
 import Layout from '../components/layout'
 import Promo from '../components/promo'
+import Section from '../components/Section'
 import Start from '../components/start'
 import Team from '../components/team'
 

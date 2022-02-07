@@ -1,7 +1,7 @@
 export default function Megaphone() {
     return (
         <div className="megaphone">
-            <div className="megaphone__img megaphone__img--1">
+            <div className="megaphone__megaphone">
                 <img src="./megaphone.png" width={200} height={200} alt="Megaphone" />
 
             </div>
