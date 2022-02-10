@@ -2,11 +2,15 @@ import AppStore from "./../public/ios-circle.svg"
 import GoogleStore from "./../public/gp-circle.svg"
 import Logo from "./../public/logo.svg"
 import Link from "next/link"
+import OpenMMenu from './../public/open-menu-button.svg'
 
 export default function Header() {
     return (
         <header className="header">
-            <Logo width="112" height="112" className="header__logo" />
+            <Logo className="header__logo" />
+            <button type="button" class="header__open-menu">
+                <OpenMMenu class="open-menu-icon" />
+            </button>
             <nav className="header__nav">
                 <ul>
                     <li>

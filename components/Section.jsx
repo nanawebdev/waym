@@ -9,7 +9,8 @@ export default function Section({
       sectionClass,
       title,
       text,
-      childrenOutOfContainer
+      childrenOutOfContainer,
+      media
     }) {
   
     function setCls() {
@@ -30,10 +31,10 @@ export default function Section({
          </div>
 
          <div className="section__media">
-            {children}
+            {media}
          </div>
 
-         
+         {children}
 
          <MainButton 
           title={buttonTitle}

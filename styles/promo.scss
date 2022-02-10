@@ -12,11 +12,11 @@
 }
 
 .promo .section__text {
-    position: relative;
-    z-index: 101;
+  position: relative;
+  z-index: 101;
 }
 
-.promo__title  {
+.promo__title {
   color: transparent;
   animation-name: titleTranslate;
   animation-timing-function: linear;
@@ -53,5 +53,27 @@
 @keyframes titleTranslate {
   100% {
     transform: translate(-100%);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo__wrapper {
+    display: none;
+  }
+
+  .section.promo .section__wrapper {
+    margin-top: initial;
+    max-width: none;
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .section.promo .container {
+    justify-content: center;
+  }
+
+  .section.promo br {
+    display: none;
   }
 }

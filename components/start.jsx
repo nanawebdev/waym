@@ -33,12 +33,13 @@ export default function Start() {
         <section id="start" className="start section">
             <div className="container">
                 <div className="section__tag">Where to start?</div>
+                <h3>Quests</h3>
                 <ul>
                     {renderQuestCard()}
                 </ul>
             </div>
 
-            <MainButton title="See more" stroke="#00D0FF" href="#" />
+            <MainButton title="See <br> more" stroke="#00D0FF" href="#" />
         </section>
     )
 }

@@ -1,8 +1,14 @@
 .uiVideo {
-    top: 0;
-    left: 0;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .uiVideo {
+    background-position: center;
+  }
 }

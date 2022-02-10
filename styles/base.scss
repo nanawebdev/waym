@@ -30,7 +30,7 @@ body {
   font-weight: 400;
 }
 
-// 400 500 600 700 
+// 400 500 600 700
 
 li {
   list-style: none;
@@ -59,7 +59,11 @@ button {
   padding: 0 120px;
   margin: 0 auto;
   height: 100%;
-  width: $desktop-content-width;
+  max-width: $desktop-content-width;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .footer {

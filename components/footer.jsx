@@ -19,6 +19,7 @@ export default function Footer() {
                     <h3 className="visually-hidden">Links</h3>
                     <a href="web.waym.app/quests">Go to quests</a>
                     <a href=" https://waym.app/terms.html">Agreements</a>
+                    
                     <div className="footer__wrapper">
                         <span>download:</span>
                         <div className="footer__line"></div>
@@ -32,9 +33,16 @@ export default function Footer() {
                     <div className="footer__wrapper">
                         <span>subscribe:</span>
                         <div className="footer__line"></div>
-                        <Instagram width="24" height="24" />
-                        <Telegram width="24" height="24" />
-                        <Facebook width="24" height="24" />
+                        <a href="">
+                            <Instagram width="24" height="24" />
+                        </a>
+                        <a href="">
+                            <Telegram width="24" height="24" />
+                        </a>
+                        <a href="">
+                            <Facebook width="24" height="24" />
+                        </a>
+
                     </div>
                     <div className='footer__copyright'>© 2021 WayMaker. Все права защищены</div>
                 </section>

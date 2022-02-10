@@ -15,9 +15,18 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: normal;
+  width: 200px;
+  height: 200px;
+}
+
+.megaphone__megaphone img {
+  width: 100%;
+  height: 100%;
 }
 
 .megaphone__img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
@@ -31,8 +40,9 @@
   animation-name: bigBubbleTranslate;
   animation-duration: 5s;
   animation-delay: 3s;
+  width: 160px;
+  height: 160px;
 }
-
 
 .megaphone__img--2 {
   top: 85px;
@@ -40,24 +50,29 @@
   animation-name: smallBubbleTranslate;
   animation-duration: 5s;
   animation-delay: 1s;
+  width: 80px;
+  height: 80px;
 }
 
 .megaphone__img--3 {
   top: 130px;
   left: 264px;
+  width: 120px;
+  height: 120px;
   animation-name: middleBubbleTranslate;
   animation-duration: 5s;
   animation-delay: 2s;
 }
 
 .megaphone__img--5 {
+  width: 200px;
+  height: 200px;
   right: 6px;
   bottom: 8px;
   animation-name: extraBubbleTranslate;
   animation-duration: 5s;
   animation-delay: 4s;
 }
-
 
 // @keyframes megaphoneRotate {
 //   0% {
@@ -69,67 +84,66 @@
 //   }
 // }
 
-
 // @keyframes smallBubbleTranslate {
-//   0% { 
+//   0% {
 //     transform: translate(-100px, 0) scale(0);
 //     opacity: 0;
-//    } 
+//    }
 
 //   10% {
 //     transform: translate(0, -40px);
-//     opacity: 1; 
+//     opacity: 1;
 //   }
 
 //   12% {
-//     transform: translate(0, 0) scale(1); 
-//     opacity: 1; 
-//    } 
+//     transform: translate(0, 0) scale(1);
+//     opacity: 1;
+//    }
 // }
 
 // @keyframes middleBubbleTranslate {
-//   0% { 
+//   0% {
 //     transform: translate(-300px, -80px) scale(0);
 //     opacity: 0;
-//    } 
+//    }
 
 //   10% {
 //     transform: translate(0, -90px);
-//     opacity: 1; 
+//     opacity: 1;
 //   }
 
 //   12% {
-//     transform: translate(0, 0) scale(1); 
-//     opacity: 1; 
-//    } 
+//     transform: translate(0, 0) scale(1);
+//     opacity: 1;
+//    }
 // }
 
 // @keyframes bigBubbleTranslate {
-//   0% { 
+//   0% {
 //     transform: translate(-300px, -80px) scale(0);
 //     opacity: 0;
-//    } 
+//    }
 
 //   10% {
 //     transform: translate(0, -90px);
-//     opacity: 1; 
+//     opacity: 1;
 //   }
 
 //   12% {
-//     transform: translate(0, 0) scale(1); 
-//     opacity: 1; 
-//    } 
+//     transform: translate(0, 0) scale(1);
+//     opacity: 1;
+//    }
 // }
 
 // @keyframes extraBubbleTranslate {
-//   0% { 
+//   0% {
 //     transform: translate(-500px, -80px) scale(0);
 //     opacity: 0;
-//    } 
+//    }
 
 //   30% {
 //     transform: translate(-300px, -100px);
-//     opacity: 1; 
+//     opacity: 1;
 //   }
 //   35% {
 //     transform: translate(-100px, -100px);
@@ -137,6 +151,38 @@
 //   }
 
 //   50% {
-//     transform: translate(0, 0) scale(1); 
-//    } 
+//     transform: translate(0, 0) scale(1);
+//    }
 // }
+
+@media (max-width: $tablet-width) {
+  .megaphone__megaphone {
+    width: 80px;
+    height: 80px;
+  }
+
+  .megaphone__img--2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .megaphone__img--3 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .megaphone__img--4 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .megaphone__img--5 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .megaphone {
+    width: 280px;
+    height: 200px;
+  }
+}

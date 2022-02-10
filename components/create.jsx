@@ -1,8 +1,11 @@
-import MainButton from "./mainButton";
 import Megaphone from "./megaphone";
 import Section from "./Section";
 
 export default function Create() {
+  const setMedia = () => {
+    return <Megaphone />
+  }
+
     return (
       <Section
         sectionClass="create"
@@ -13,8 +16,9 @@ export default function Create() {
         title="Write new stories <br> to expand <br> the metaverse"
         text="Use our quest builder <br>  to create stories easy and fast. <br> 
         Release your creative potential <br> and get the reward."
+        media={setMedia()}
        >
-           <Megaphone />
+         
         </Section>
     )
 }

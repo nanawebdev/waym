@@ -22,7 +22,6 @@
   margin-bottom: 40px;
 }
 
-
 .team li + li {
   margin-left: 24px;
 }
@@ -41,4 +40,33 @@
 
 .section.team {
   height: auto;
+}
+
+.team__img {
+  position: relative;
+  width: 282px;
+  height: 282px;
+  cursor: pointer;
+}
+
+.team__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.team__img img:first-child {
+  opacity: 1;
+}
+
+.team__img:hover img:first-child {
+  opacity: 0;
+}
+
+.team__img:hover img:last-child {
+  opacity: 1;
 }

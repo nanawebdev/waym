@@ -1,6 +1,7 @@
 .create {
+  position: relative;
   color: $create-color;
-  background-image: url('./../public/create-bg.svg');
+  background-image: url("./../public/create-bg.svg");
 }
 
 .create .section__wrapper {
@@ -9,4 +10,29 @@
 
 .create h3 {
   margin-bottom: 173px;
+}
+
+@media (max-width: $tablet-width) {
+  .create .section__wrapper {
+    margin-right: 0;
+  }
+
+  // .create .megaphone {
+  //   transform: scale(0.4);
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  // }
+
+  .create.section .container {
+    flex-direction: column;
+  }
+
+  .create .section__media {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(20px, -60%);
+  }
 }
