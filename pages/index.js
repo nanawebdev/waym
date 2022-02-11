@@ -9,7 +9,6 @@ import Start from '../components/start'
 import Team from '../components/team'
 
 export default function Home() {
-
   return (
     <div className='home'>
         <Promo />

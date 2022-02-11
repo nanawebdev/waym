@@ -16,7 +16,7 @@ export default function Promo() {
 
     return (
         <Section
-            sectionclassName="promo"
+            sectionClass="promo"
             buttonTitle="Get <br> started"
             buttonColor="#000B29"
             buttonHref="https://web.waym.app/quest/181"

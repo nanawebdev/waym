@@ -24,4 +24,12 @@
     margin-bottom: 24px;
     line-height: 40px;
   }
+
+  .section.explore .section__text {
+    display: block;
+  }
+
+  .section.explore br {
+    display: none;
+  }
 }

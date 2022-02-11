@@ -36,6 +36,13 @@
 
 .about .container {
   padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 38% 1fr;
+}
+
+.about .section__media {
+  align-self: center;
+  margin-top: 70px;
 }
 
 @media (max-width: $max-mobile-width) {

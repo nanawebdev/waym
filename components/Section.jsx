@@ -1,47 +1,51 @@
 import MainButton from "./mainButton";
 
 export default function Section({
-    tag, 
+    tag,
     buttonTitle,
-     buttonColor,
-      buttonHref, 
-      children, 
-      sectionClass,
-      title,
-      text,
-      childrenOutOfContainer,
-      media
-    }) {
-  
-    function setCls() {
-        const cls = ['section']
+    buttonColor,
+    buttonHref,
+    children,
+    sectionClass,
+    title,
+    text,
+    childrenOutOfContainer,
+    media
+}) {
+
+    const cls = ['section']
+
+    if(sectionClass !== '') {
         cls.push(sectionClass)
-        return cls.join(' ')
+    }
+
+    const setClasses = () => {
+       return cls.join(' ')
     }
 
     return (
-     <section className={setCls()}>
-         {childrenOutOfContainer}
-         
-         <div className="container">
-         <div className="section__wrapper">
-            <p className="section__tag">{tag}</p>
-            <h3 dangerouslySetInnerHTML={{__html: title}}></h3>
-            <div  className="section__text" dangerouslySetInnerHTML={{__html: text}}></div>
-         </div>
+        <section className={setClasses()}>
+            {childrenOutOfContainer}
 
-         <div className="section__media">
-            {media}
-         </div>
+            <div className="container">
+                <div className="section__wrapper">
+                    <p className="section__tag">{tag}</p>
+                    <h3 dangerouslySetInnerHTML={{ __html: title }}></h3>
+                    <div className="section__text" dangerouslySetInnerHTML={{ __html: text }}></div>
+                </div>
 
-         {children}
+                <div className="section__media">
+                    {media}
+                </div>
 
-         <MainButton 
-          title={buttonTitle}
-          stroke={buttonColor}
-          href={buttonHref}
-          />
-          </div>
-     </section>
+                {children}
+
+                <MainButton
+                    title={buttonTitle}
+                    stroke={buttonColor}
+                    href={buttonHref}
+                />
+            </div>
+        </section>
     )
 }

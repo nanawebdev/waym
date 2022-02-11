@@ -9,7 +9,7 @@ export default function Invest() {
 
     return (
         <Section
-            sectionclassName="invest"
+            sectionClass="invest"
             tag="Invest"
             buttonTitle="About <br> WAYM <br> Tokens"
             buttonColor="#3AA76D"

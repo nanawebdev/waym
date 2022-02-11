@@ -44,6 +44,7 @@
 
 .section.promo .section__wrapper {
   margin-top: auto;
+  z-index: 2;
 }
 
 .section.promo {
@@ -64,13 +65,14 @@
   .section.promo .section__wrapper {
     margin-top: initial;
     max-width: none;
+    z-index: 1;
     width: 100%;
     font-size: 20px;
     line-height: 28px;
   }
 
-  .section.promo .container {
-    justify-content: center;
+  .section.promo .section__text {
+    display: block;
   }
 
   .section.promo br {

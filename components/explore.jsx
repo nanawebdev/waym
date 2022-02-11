@@ -8,7 +8,7 @@ export default function Explore() {
   
     return (
       <Section
-        sectionclassName="explore"
+        sectionClass="explore"
         tag="Explore"
         buttonTitle="Start <br> exploring"
         buttonColor="#00D0FF"

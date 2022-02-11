@@ -8,7 +8,7 @@ export default function About() {
 
     return (
         <Section
-            sectionclassName="about"
+            sectionClass="about"
             buttonTitle="Learn more"
             buttonColor="#ED6E33"
             buttonHref="https://https://whitepaper.waym.app/"

@@ -4,16 +4,31 @@ import Logo from "./../public/logo.svg"
 import Link from "next/link"
 import OpenMMenu from './../public/open-menu-button.svg'
 import { useRouter } from 'next/router'
+// import { useEffect, useRef } from "react"
 
 export default function Header() {
     const router = useRouter()
+
     const cls = ['header']
+    if (router.pathname === '/nfts' || router.pathname === '/token') {
+        cls.push('header--relative')
+    }
+
     const setClasses = () => {
-        if (router.pathname === '/nfts' || router.pathname === '/token') {
-            cls.push('header--relative')
-        }
         return cls.join(' ')
     }
+
+    // const headerRef = useRef()
+    // // document.elemFromPoint(x, y);
+
+    // useEffect(() => {
+    //     const headerHeight = headerRef.offsetHeight
+    //     // console.log('headerHeight', headerHeight);
+
+    //     window.addEventListener('scroll', () => {
+    //         // console.log('headerRef', headerRef);
+    //     })
+    // }, [])
 
     return (
         <header className={setClasses()}>
