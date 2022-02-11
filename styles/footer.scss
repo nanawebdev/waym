@@ -85,7 +85,7 @@
   color: $light-grey;
 }
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: 1439px) {
   .footer input,
   .footer button {
     min-width: initial;

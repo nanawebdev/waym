@@ -9,7 +9,7 @@ export default function Header() {
     const router = useRouter()
     const cls = ['header']
     const setClasses = () => {
-        if (router.pathname === '/nfts') {
+        if (router.pathname === '/nfts' || router.pathname === '/token') {
             cls.push('header--relative')
         }
         return cls.join(' ')
