@@ -34,6 +34,8 @@
   background-color: transparent;
   margin-bottom: 0;
   line-height: 28px;
+  border-color: $light-blue;
+  color: $light-blue;
 }
 
 .footer section {
@@ -92,8 +94,6 @@
   }
 
   .footer button {
-    border-color: $light-blue;
-    color: $light-blue;
     border-width: 2px;
   }
 
