@@ -38,7 +38,7 @@
   padding-bottom: 40px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .about .puzzle {
     transform: scale(0.5);
   }

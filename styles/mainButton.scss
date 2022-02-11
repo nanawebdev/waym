@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .main-button {
     width: 120px;
     height: 120px;

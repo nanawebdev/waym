@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .promo__wrapper {
     display: none;
   }

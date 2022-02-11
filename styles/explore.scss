@@ -19,7 +19,7 @@
   margin-top: 24%;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .section.explore h3 {
     margin-bottom: 24px;
     line-height: 40px;

@@ -9,5 +9,9 @@ $create-color: #FF375F;
 $about-color: #ED6E33;
 $dark-grey: #E0E0E4;
 
-$desktop-content-width: 1440px;
-$tablet-width: 767px;
+$desktop-content-width: 1440px; // Не для  @media!
+
+// для  @media : 
+$pre-desktop-width: 1439px;
+$max-tablet-width: 1024px;
+$max-mobile-width: 767px;

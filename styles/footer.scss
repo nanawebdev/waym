@@ -18,7 +18,7 @@
   border: 1px solid $primary-dark;
   color: $primary-dark;
   padding: 48px 40px;
-  min-width: 560px;
+  width: 560px;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
@@ -85,7 +85,7 @@
   color: $light-grey;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .footer input,
   .footer button {
     min-width: initial;
@@ -141,3 +141,5 @@
     margin-bottom: 0;
   }
 }
+
+

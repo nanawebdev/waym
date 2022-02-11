@@ -4,7 +4,6 @@
 }
 
 .nfts ul {
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   margin: 0;
@@ -76,7 +75,6 @@
   opacity: 0;
 }
 
-
 .nfts__info {
   display: flex;
   justify-content: space-between;
@@ -97,7 +95,7 @@
 }
 
 .nfts__info:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .nfts h4 {
@@ -154,10 +152,20 @@
 .nfts .header {
   position: static;
 }
+// от 1440 иначе не влезет
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-tablet-width) {
+  // От 1439 до максимально маленького возможного значения
   .nfts ul {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 40px;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .nfts ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
@@ -175,6 +183,7 @@
   }
 
   .nfts li {
+    margin: 0 auto;
     height: 275px;
   }
 
@@ -205,22 +214,22 @@
   }
 
   .nfts__go-register {
-      flex-direction: column;
-      margin-top: 40px;
+    flex-direction: column;
+    margin-top: 40px;
 
-      & h3 {
-        font-size: 32px;
-        line-height: 40px;
-      }
+    & h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
 
-      & p {
-        font-size: 20px;
-        line-height: 28px;
-        margin-bottom: 40px;
-      }
+    & p {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
 
-      & .main-button {
-          margin-bottom: 40px;
-      }
+    & .main-button {
+      margin-bottom: 40px;
+    }
   }
 }

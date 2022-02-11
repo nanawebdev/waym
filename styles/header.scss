@@ -2,7 +2,6 @@
   position: fixed;
   z-index: 100;
   top: 40px;
-  // top: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -10,8 +9,6 @@
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  // position: -webkit-sticky;
-  // position: sticky;
 }
 
 .header ul {
@@ -61,7 +58,7 @@
   position: relative;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .header__nav,
   .header__links {
     display: none;

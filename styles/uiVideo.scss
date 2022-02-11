@@ -7,7 +7,7 @@
   object-fit: cover;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .uiVideo {
     background-position: center;
   }

@@ -12,7 +12,7 @@
   margin-bottom: 173px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-mobile-width) {
   .create .section__wrapper {
     margin-right: 0;
   }
