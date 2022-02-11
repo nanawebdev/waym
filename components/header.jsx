@@ -4,7 +4,8 @@ import Logo from "./../public/logo.svg"
 import Link from "next/link"
 import OpenMMenu from './../public/open-menu-button.svg'
 import { useRouter } from 'next/router'
-// import { useEffect, useRef } from "react"
+import { useState } from "react"
+import { useEffect } from "react"
 
 export default function Header() {
     const router = useRouter()
@@ -18,20 +19,26 @@ export default function Header() {
         return cls.join(' ')
     }
 
-    // const headerRef = useRef()
-    // // document.elemFromPoint(x, y);
+    const [headerStyles, setHeaderStyles] = useState({})
 
-    // useEffect(() => {
-    //     const headerHeight = headerRef.offsetHeight
-    //     // console.log('headerHeight', headerHeight);
+    useEffect(() => {
+        const boundary = window.innerHeight * 6
+        const headerTop = 40
 
-    //     window.addEventListener('scroll', () => {
-    //         // console.log('headerRef', headerRef);
-    //     })
-    // }, [])
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > boundary) {
+                setHeaderStyles({
+                    position: 'absolute',
+                    top: `${boundary + headerTop}px`
+                })
+            } else {
+                setHeaderStyles({})
+            }
+        })
+    }, [])
 
     return (
-        <header className={setClasses()}>
+        <header className={setClasses()} style={headerStyles}>
             <Logo className="header__logo" />
             <button type="button" className="header__open-menu">
                 <OpenMMenu className="open-menu-icon" />

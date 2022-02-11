@@ -47,6 +47,11 @@
   display: none;
 }
 
+.section__media {
+  align-self: center;
+  margin-top: 70px;
+}
+
 @media (max-width: $max-mobile-width) {
   .section h3 {
     font-weight: 500;
@@ -79,20 +84,20 @@
     display: flex;
   }
 
-  .section__wrapper {
-    grid-row: 1 / 2;
-  }
+  // .section__wrapper {
+  //   grid-row: 1 / 2;
+  // }
 
-  .section__media {
-    grid-row: 2 / 3;
-  }
+  // .section__media {
+  //   grid-row: 2 / 3;
+  // }
 
   .section__text {
     display: none;
   }
 
   .section__mobile-text {
-    grid-row: 3 / 4;
+    // grid-row: 3 / 4;
     display: block;
   }
 }

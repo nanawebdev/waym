@@ -4,22 +4,16 @@
 }
 
 .invest .container {
-    padding-bottom: 56px;
+    padding-bottom: 49px;
     position: relative;
+    display: grid;
+    grid-template-columns: 45% 1fr;
 }
 
 .invest h3 {
     margin-bottom: 170px;
 }
 
-.invest .section__media {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-22%,-50%);
-}
-
-.section.invest .section__wrapper {
-    width: 50%;
-    margin-top: 25%;
+.invest .main-button {
+    bottom: 32px;
 }

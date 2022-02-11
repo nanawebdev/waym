@@ -31,10 +31,6 @@
   padding: 0 80px;
 }
 
-// .promo__wrapper .promo__title:last-child {
-//   // animation-delay: 10s;
-// }
-
 .section.promo .container {
   position: relative;
   overflow: hidden;
@@ -77,5 +73,11 @@
 
   .section.promo br {
     display: none;
+  }
+
+  .section.promo .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

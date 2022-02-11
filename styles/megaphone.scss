@@ -1,188 +1,86 @@
 .megaphone {
   display: flex;
   position: relative;
-  width: 694px;
-  height: 272px;
+  width: 677px;
+  height: 261px;
   flex-shrink: 0;
-}
-
-.megaphone__megaphone {
-  position: absolute;
-  top: 32px;
-  left: -5px;
-  animation-name: megaphoneRotate;
-  animation-timing-function: ease-in;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  width: 200px;
-  height: 200px;
-}
-
-.megaphone__megaphone img {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 
 .megaphone__img {
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  // opacity: 0;
 }
 
-.megaphone__img--4 {
-  top: 0;
-  left: 340px;
-  animation-name: bigBubbleTranslate;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  width: 160px;
-  height: 160px;
+.megaphone__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.megaphone__img--1 {
+  width: 30%;
+  height: 77%;
+  transform: translate(-9%, 16%);
 }
 
 .megaphone__img--2 {
-  top: 85px;
-  left: 192px;
-  animation-name: smallBubbleTranslate;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  width: 80px;
-  height: 80px;
+  width: 12%;
+  height: 31%;
+  transform: translate(220%, 110%);
 }
 
 .megaphone__img--3 {
-  top: 130px;
-  left: 264px;
-  width: 120px;
-  height: 120px;
-  animation-name: middleBubbleTranslate;
-  animation-duration: 5s;
-  animation-delay: 2s;
+  width: 18%;
+  height: 46%;
+  transform: translate(206%, 110%);
+}
+
+.megaphone__img--4 {
+  width: 24%;
+  height: 63%;
+  transform: translate(200%, 0%);
 }
 
 .megaphone__img--5 {
-  width: 200px;
-  height: 200px;
-  right: 6px;
-  bottom: 8px;
-  animation-name: extraBubbleTranslate;
-  animation-duration: 5s;
-  animation-delay: 4s;
+  width: 30%;
+  height: 78%;
+  transform: translate(234%, 27%);
 }
 
-// @keyframes megaphoneRotate {
-//   0% {
-//     transform: rotate(0);
-//   }
-
-//   5% {
-//     transform: rotate(-90deg)
-//   }
-// }
-
-// @keyframes smallBubbleTranslate {
-//   0% {
-//     transform: translate(-100px, 0) scale(0);
-//     opacity: 0;
-//    }
-
-//   10% {
-//     transform: translate(0, -40px);
-//     opacity: 1;
-//   }
-
-//   12% {
-//     transform: translate(0, 0) scale(1);
-//     opacity: 1;
-//    }
-// }
-
-// @keyframes middleBubbleTranslate {
-//   0% {
-//     transform: translate(-300px, -80px) scale(0);
-//     opacity: 0;
-//    }
-
-//   10% {
-//     transform: translate(0, -90px);
-//     opacity: 1;
-//   }
-
-//   12% {
-//     transform: translate(0, 0) scale(1);
-//     opacity: 1;
-//    }
-// }
-
-// @keyframes bigBubbleTranslate {
-//   0% {
-//     transform: translate(-300px, -80px) scale(0);
-//     opacity: 0;
-//    }
-
-//   10% {
-//     transform: translate(0, -90px);
-//     opacity: 1;
-//   }
-
-//   12% {
-//     transform: translate(0, 0) scale(1);
-//     opacity: 1;
-//    }
-// }
-
-// @keyframes extraBubbleTranslate {
-//   0% {
-//     transform: translate(-500px, -80px) scale(0);
-//     opacity: 0;
-//    }
-
-//   30% {
-//     transform: translate(-300px, -100px);
-//     opacity: 1;
-//   }
-//   35% {
-//     transform: translate(-100px, -100px);
-
-//   }
-
-//   50% {
-//     transform: translate(0, 0) scale(1);
-//    }
-// }
-
 @media (max-width: $max-mobile-width) {
-  .megaphone__megaphone {
-    width: 80px;
-    height: 80px;
-  }
-
-  .megaphone__img--2 {
-    width: 40px;
-    height: 40px;
-  }
-
-  .megaphone__img--3 {
-    width: 60px;
-    height: 60px;
-  }
-
-  .megaphone__img--4 {
-    width: 80px;
-    height: 80px;
-  }
-
-  .megaphone__img--5 {
-    width: 100px;
-    height: 100px;
-  }
-
   .megaphone {
     width: 280px;
     height: 200px;
+    border: 1px solid red;
+  }
+
+  .megaphone__img--5 {
+    width: 34%;
+    height: 50%;
+    transform: translate(186%, 69%);
+  }
+
+  .megaphone__img--4 {
+    width: 28%;
+    height: 40%;
+    transform: translate(173%, 0);
+  }
+
+  .megaphone__img--1 {
+    height: 40%;
+    transform: translate(-9%, 25%);
+  }
+
+  .megaphone__img--2 {
+    width: 13%;
+    height: 18%;
+    transform: translate(212%, 109%);
+  }
+
+  .megaphone__img--3 {
+    width: 23%;
+    height: 29%;
+    transform: translate(156%, 121%);
   }
 }

@@ -40,18 +40,13 @@
   grid-template-columns: 38% 1fr;
 }
 
-.about .section__media {
-  align-self: center;
-  margin-top: 70px;
-}
-
 @media (max-width: $max-mobile-width) {
   .about .puzzle {
     transform: scale(0.5);
   }
 
   .about .puzzle {
-    width: 320px;
-    height: 289px;
+    // width: 320px;
+    // height: 289px;
   }
 }

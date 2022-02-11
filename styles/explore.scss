@@ -32,4 +32,14 @@
   .section.explore br {
     display: none;
   }
+
+  .explore .section__wrapper {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .explore.section .container {
+    align-items: center;
+    justify-content: center;
+  }
 }
