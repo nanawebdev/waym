@@ -8,7 +8,7 @@ export default function Create() {
 
     return (
       <Section
-        sectionClass="create"
+        sectionclassName="create"
         tag="Create"
         buttonTitle="Start creating"
         buttonColor="#FF375F"

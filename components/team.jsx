@@ -9,7 +9,7 @@ export default function Team() {
         return team.map(v => {
             return (
                 <li key={v.id}>
-                    <div class="team__img">
+                    <div className="team__img">
                         <img src={v.greenImg} alt={v.name} />
                         <img src={v.imgSrc} alt={v.name} />
                     </div>

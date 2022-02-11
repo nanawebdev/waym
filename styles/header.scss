@@ -57,6 +57,10 @@
   display: none;
 }
 
+.header--relative {
+  position: relative;
+}
+
 @media (max-width: $tablet-width) {
   .header__nav,
   .header__links {

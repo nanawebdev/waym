@@ -8,8 +8,7 @@ export default function About() {
 
     return (
         <Section
-            sectionClass="about"
-            tag=""
+            sectionclassName="about"
             buttonTitle="Learn more"
             buttonColor="#ED6E33"
             buttonHref="https://https://whitepaper.waym.app/"
@@ -18,7 +17,7 @@ export default function About() {
                 <p>Community members create their <br> own content and vote for the best <br>  WAYM quests, determining <br> the future of the metaverse.</p>"
             media={setMedia()}
         >
-            <div class="section__mobile-text">
+            <div className="section__mobile-text">
                 <p>The continuously developing chain <br /> of interactive stories united <br />  by the central plotline.</p>
                 <p>Community members create their <br /> own content and vote for the best <br />  WAYM quests, determining <br /> the future of the metaverse.</p>
             </div>

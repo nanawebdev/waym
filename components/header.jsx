@@ -3,13 +3,23 @@ import GoogleStore from "./../public/gp-circle.svg"
 import Logo from "./../public/logo.svg"
 import Link from "next/link"
 import OpenMMenu from './../public/open-menu-button.svg'
+import { useRouter } from 'next/router'
 
 export default function Header() {
+    const router = useRouter()
+    const cls = ['header']
+    const setClasses = () => {
+        if (router.pathname === '/nfts') {
+            cls.push('header--relative')
+        }
+        return cls.join(' ')
+    }
+
     return (
-        <header className="header">
+        <header className={setClasses()}>
             <Logo className="header__logo" />
-            <button type="button" class="header__open-menu">
-                <OpenMMenu class="open-menu-icon" />
+            <button type="button" className="header__open-menu">
+                <OpenMMenu className="open-menu-icon" />
             </button>
             <nav className="header__nav">
                 <ul>
