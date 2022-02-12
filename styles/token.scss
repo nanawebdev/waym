@@ -1,5 +1,6 @@
 .token .container {
   padding: 120px;
+  padding-top: 159px;
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,7 +16,9 @@
   max-width: 242px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  align-self: flex-start;
   color: rgba($basic-white, 0.75);
+  margin-top: 10px;
 }
 
 .token p {
@@ -28,9 +31,13 @@
 }
 
 .token .main-button {
-  position: static;
+  align-self: flex-start;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 82px
 }
 
 @media (max-width: $max-mobile-width) {

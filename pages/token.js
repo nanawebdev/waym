@@ -14,7 +14,7 @@ export default function Token() {
                     <p>We will start public sale on March 2022.</p>
                     <p>Register now for get a pre-sale bonus!</p>
                 </div>
-                <MainButton title="Register" color="" />
+                <MainButton title="Register" color="#ffffff" />
             </div>
 
         </section>
