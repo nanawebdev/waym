@@ -13,12 +13,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(73px);
+  transform: translateY(64px);
+  padding-bottom: 120px;
 }
+
+// .team.section {
+//   height: auto;
+// }
 
 .team h3 {
   color: $primary-green;
   margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .team li + li {

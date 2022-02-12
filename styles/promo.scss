@@ -20,7 +20,7 @@
   color: transparent;
   animation-name: titleTranslate;
   animation-timing-function: linear;
-  animation-duration: 7s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   font-weight: 900;
   font-size: 300px;
@@ -38,6 +38,10 @@
 
 .section.promo .section__wrapper {
   display: none;
+}
+
+.section.promo .icon-border {
+  stroke: red;
 }
 
 .section.promo .section__text {

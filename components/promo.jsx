@@ -18,7 +18,7 @@ export default function Promo() {
         <Section
             sectionClass="promo"
             buttonTitle="Get <br> started"
-            buttonColor="#000B29"
+            buttonColor="#ffffff"
             buttonHref="https://web.waym.app/quest/181"
             text="Find your own way through <br>
                 our interactive text metaverse <br>

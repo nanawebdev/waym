@@ -1,10 +1,12 @@
 export default function UiVideo({src}) {
     return (
         <video className="uiVideo"
+            autoPlay
             src={src}
             alt="video"
-            // autoPlay
             muted
+            type="video/mp4"
+            loop
         >
 
         </video>

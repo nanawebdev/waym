@@ -43,7 +43,7 @@ export default function Section({
 
                 <MainButton
                     title={buttonTitle}
-                    stroke={buttonColor}
+                    color={buttonColor}
                     href={buttonHref}
                 />
             </div>
