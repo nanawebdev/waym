@@ -1,12 +1,12 @@
 .explore {
   color: $bright-blue;
-  padding-bottom: 56px;
+  position: relative;
 }
 
 .explore .section__wrapper {
   position: relative;
   z-index: 1;
-  flex-grow: 1;
+  padding-bottom: 56px;
 }
 
 .section.explore h3 {
@@ -15,8 +15,10 @@
   line-height: 56px;
 }
 
-.explore .section__wrapper {
-  margin-top: 24%;
+.section.explore .section__media {
+ position: absolute;
+ top: 0;
+ left: 0;
 }
 
 @media (max-width: $max-mobile-width) {

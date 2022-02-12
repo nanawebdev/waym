@@ -11,16 +11,10 @@
   margin-top: 20px;
 }
 
-.about .section__wrapper {
-  margin-top: 31%;
+.about .section__media  {
+  margin-top: 35%;
+  transform: none;
 }
-
-// .about .section__media  {
-//   position: absolute;
-//   top: 231px;
-//   left: 53.5%;
-//   transform: translateX(-50%);
-// }
 .about__mobile-text {
   display: none;
 }
@@ -35,9 +29,16 @@
 }
 
 .about .container {
-  padding-bottom: 40px;
-  display: grid;
   grid-template-columns: 38% 1fr;
+}
+
+.about .section__wrapper {
+   padding-bottom: 35px;
+}
+
+.about .main-button {
+  margin-left: 66px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: $max-mobile-width) {

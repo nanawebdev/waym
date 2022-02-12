@@ -5,7 +5,7 @@ export default function Promo() {
    
 
     function getChildrenOutOfContainer() {
-        return <div>
+        return <div className="section__bg">
             <UiVideo src="./promo-video.mp4" />
             <div className="promo__wrapper">
                 <div className="promo__title">Join the WayMaker</div>
@@ -20,7 +20,6 @@ export default function Promo() {
             buttonTitle="Get <br> started"
             buttonColor="#000B29"
             buttonHref="https://web.waym.app/quest/181"
-            title=""
             text="Find your own way through <br>
                 our interactive text metaverse <br>
                 created by its users."

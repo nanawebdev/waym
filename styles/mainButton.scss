@@ -3,13 +3,14 @@
   height: 160px;
   border-radius: 50%;
   overflow: hidden;
-  position: absolute;
-  bottom: 42px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  align-self: flex-end;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  margin-bottom: 42px;
 }
 
 .main-button__bg {

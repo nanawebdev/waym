@@ -59,7 +59,7 @@
 
 .start .section__tag {
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .start h4 {
@@ -70,9 +70,22 @@
 
 .section.start .container {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,max-content);
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+.start .main-button {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  margin-top: 100px;
+  // justify-self: flex-end;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .start__text-border {

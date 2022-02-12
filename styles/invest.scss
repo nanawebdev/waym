@@ -4,10 +4,11 @@
 }
 
 .invest .container {
-    padding-bottom: 49px;
     position: relative;
-    display: grid;
-    grid-template-columns: 45% 1fr;
+}
+
+.invest .section__wrapper {
+    padding-bottom: 49px;
 }
 
 .invest h3 {
@@ -15,5 +16,5 @@
 }
 
 .invest .main-button {
-    bottom: 32px;
+    margin-bottom: 34px;
 }
