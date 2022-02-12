@@ -9,16 +9,16 @@
   padding: 0;
 }
 
-.team .container {
-  padding-bottom: 120px;
+.team.section .container {
   display: flex;
   flex-direction: column;
-  margin-top: 16%;
+  justify-content: center;
+  transform: translateY(73px);
 }
 
 .team h3 {
   color: $primary-green;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .team li + li {

@@ -31,8 +31,9 @@ export default function Section({
                 <div className="section__wrapper">
                     <p className="section__tag">{tag}</p>
                     <h3 dangerouslySetInnerHTML={{ __html: title }}></h3>
-                    <div className="section__text" dangerouslySetInnerHTML={{ __html: text }}></div>
                 </div>
+
+                <div className="section__text" dangerouslySetInnerHTML={{ __html: text }}></div>
 
                 <div className="section__media">
                     {media}

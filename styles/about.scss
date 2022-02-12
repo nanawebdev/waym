@@ -3,18 +3,14 @@
   background-image: url("./../public/about-bg.svg");
 }
 
+.about .section__tag {
+  display: none;
+}
+
 .about h3 {
-  margin-bottom: 106px;
+  margin: 0;
 }
 
-.about .section__text + .section__text {
-  margin-top: 20px;
-}
-
-.about .section__media  {
-  margin-top: 35%;
-  transform: none;
-}
 .about__mobile-text {
   display: none;
 }
@@ -32,7 +28,7 @@
   grid-template-columns: 38% 1fr;
 }
 
-.about .section__wrapper {
+.about .section__text {
    padding-bottom: 35px;
 }
 

@@ -4,13 +4,17 @@
 }
 
 .explore .section__wrapper {
-  position: relative;
   z-index: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.explore .section__text {
   padding-bottom: 56px;
+  grid-row: 2 / 3;
 }
 
 .section.explore h3 {
-  margin-bottom: 154px;
   display: block;
   line-height: 56px;
 }
