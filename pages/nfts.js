@@ -51,7 +51,7 @@ export default function Nfts() {
       </div>
 
       <div className="nfts__big-image">
-          <img src="./../big-nfts.png" alt="nfts" />
+          <img src="./big-nfts.png" alt="nfts" />
         </div>
     </div>
   )
