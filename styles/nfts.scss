@@ -1,6 +1,14 @@
 .nfts {
   padding: 80px;
-  padding-top: 232px;
+  padding-top: 139px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 120px;
+}
+
+.nfts.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .nfts ul {
@@ -127,13 +135,6 @@
   transform: none;
 }
 
-.nfts__go-register {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 120px;
-  align-items: center;
-}
-
 .nfts h3 {
   font-weight: 500;
   font-size: 48px;
@@ -141,16 +142,37 @@
   font-family: "Roboto", monospace, sans-serif;
   color: rgba($basic-white, 0.75);
   margin: 0;
+  margin-top: 29px;
 }
 
 .nfts p {
   color: rgba($basic-white, 0.75);
   font-size: 20px;
   line-height: 32px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.nfts__go-register {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  // align-items: center;
 }
 
 .nfts .header {
   position: static;
+}
+
+.nfts__big-image {
+  width: 1200px;
+  height: 675px;
+  margin-top: 40px;
+}
+
+.nfts__big-image img {
+  width: 100%;
+  height: 100%;
 }
 // от 1440 иначе не влезет
 

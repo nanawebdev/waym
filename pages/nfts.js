@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Layout from "../components/layout"
 import MainButton from "../components/mainButton"
 
@@ -47,9 +48,12 @@ export default function Nfts() {
           <h3>Public sale will coming soon</h3>
           <p>Register now and get a pre-sale bonus</p>
         </div>
-
         <MainButton title="Register" />
       </div>
+
+      <div className="nfts__big-image">
+          <img src="../big-nfts.png" alt="nfts" />
+        </div>
     </div>
   )
 }
