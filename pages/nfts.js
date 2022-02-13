@@ -38,6 +38,7 @@ export default function Nfts() {
 
   return (
     <div className="nfts container">
+      <h2>NFTs</h2>
       <ul>
         {renderNftsItems()}
       </ul>

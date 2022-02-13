@@ -145,6 +145,10 @@
   margin-top: 29px;
 }
 
+.nfts h2 {
+  display: none;
+}
+
 .nfts p {
   color: rgba($basic-white, 0.75);
   font-size: 20px;
@@ -248,10 +252,41 @@
       font-size: 20px;
       line-height: 28px;
       margin-bottom: 40px;
+      max-width: 90%;
+      margin-top: 8px;
     }
 
     & .main-button {
       margin-bottom: 40px;
+      width: 160px;
+      height: 160px;
     }
+  }
+
+  .nfts__big-image {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .nfts h2 {
+    display: block;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .nfts {
+    padding-top: 20px;
+  }
+
+  .nfts ul {
+    row-gap: 20px;
+  }
+
+  .nfts.container {
+    padding-bottom: 36px;
   }
 }

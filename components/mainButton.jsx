@@ -29,7 +29,7 @@ export default function MainButton({ title, href, color, mobileTitle }) {
             <svg className="main-button__bg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="160" height="160" rx="80" fill="#000B29" />
                 <rect x="8" y="8" width="144" height="144" rx="72" stroke="url(#pattern-cta)" strokeOpacity="0.25" strokeWidth="16" />
-                <g style={{ 'mix-blend-mode': 'overlay' }}>
+                <g style={{ 'mixBlendMode': 'overlay' }}>
                     <rect x="8" y="8" width="144" height="144" rx="72" stroke={color} strokeWidth="16" />
                 </g>
                 <defs>
