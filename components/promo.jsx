@@ -6,7 +6,7 @@ export default function Promo() {
 
     function getChildrenOutOfContainer() {
         return <div className="section__bg">
-            <UiVideo src="./promo-video.mp4" />
+            <UiVideo src="https://ik.imagekit.io/9uamvjevwkkw/simona.mp4" />
             <div className="promo__wrapper">
                 <div className="promo__title">Join the WayMaker</div>
                 <div className="promo__title">Join the WayMaker</div>

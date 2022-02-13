@@ -3,7 +3,9 @@ import Link from "next/link"
 export default function Navigation({additionalClass, closeMenuFunc}) {
     return (
         <nav className={`navigation ${additionalClass}`}>
-        <ul onClick={() => closeMenuFunc()}>
+        <ul onClick={() => {
+            if(closeMenuFunc !== undefined) {closeMenuFunc()}
+        }}>
             <li>
                 <a href="#start">Quests</a>
             </li>

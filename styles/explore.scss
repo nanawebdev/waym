@@ -1,6 +1,17 @@
 .explore {
   color: $bright-blue;
   position: relative;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(#000, 0.5);
+  }
 }
 
 .explore .section__wrapper {

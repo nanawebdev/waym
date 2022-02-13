@@ -17,12 +17,13 @@
 }
 
 .promo__title {
+  font-family: "Roboto", monospace, sans-serif;
   color: transparent;
-  animation-name: titleTranslate;
+  // animation-name: titleTranslate;
   animation-timing-function: linear;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 300px;
   line-height: 300px;
   text-transform: uppercase;

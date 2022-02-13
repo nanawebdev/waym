@@ -7,8 +7,9 @@ import { useRouter } from 'next/router'
 import { useState } from "react"
 import { useEffect } from "react"
 import Navigation from "./navigation"
+import Link from "next/link"
 
-export default function Header({mode, openMenuFunc}) {
+export default function Header({ mode, openMenuFunc }) {
     const router = useRouter()
 
     const cls = ['header']
@@ -21,8 +22,8 @@ export default function Header({mode, openMenuFunc}) {
     }
 
     const [headerStyles, setHeaderStyles] = useState({})
- 
-    
+
+
     useEffect(() => {
         const boundary = window.innerHeight * 6
         const headerTop = 40
@@ -41,10 +42,12 @@ export default function Header({mode, openMenuFunc}) {
 
     return (
         <header className={setClasses()} style={headerStyles}>
-            { mode === 'desktop' 
-            ? <Logo className="header__logo" />
-            : <MobileLogo className="header__logo" />
-            }
+            <Link href="/">
+                {mode === 'desktop'
+                    ? <Logo className="header__logo" />
+                    : <MobileLogo className="header__logo" />
+                }
+            </Link>
             <button type="button" className="header__open-menu" onClick={() => openMenuFunc()}>
                 <OpenMMenu className="open-menu-icon" />
             </button>

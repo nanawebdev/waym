@@ -7,8 +7,7 @@ export default function UiVideo({src}) {
             muted
             type="video/mp4"
             loop
-        >
-
-        </video>
+            playsInline
+        />
     )
 }
