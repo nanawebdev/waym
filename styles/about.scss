@@ -29,7 +29,7 @@
 }
 
 .about .section__text {
-   padding-bottom: 35px;
+   margin-bottom: 35px;
 }
 
 .about .main-button {
@@ -37,13 +37,61 @@
   margin-bottom: 40px;
 }
 
+.about .main-button br {
+  display: none;
+}
+
 @media (max-width: $max-mobile-width) {
-  .about .puzzle {
-    transform: scale(0.5);
+  .about .main-button br {
+    display: block;
   }
 
-  .about .puzzle {
-    // width: 320px;
-    // height: 289px;
+  .about .container {
+    min-height: 1130px;
+    justify-content: flex-start;
+    padding-top: 147px;
+  }
+
+  .about .section__wrapper {
+    margin-top: 0;
+  }
+
+  .about .section__media {
+    margin-left: 23px;
+  }
+
+  .about .main-button {
+    margin-left: 0;
+    margin-bottom: 20px;
+    order: 2;
+  }
+
+  .about h3 {
+    margin-bottom: 56px;
+  }
+
+  .about .section__text {
+    margin-top: 70px;
+    display: block;
+    order: 1;
+    margin-bottom: 26px;
+  }
+
+  .about p br {
+    display: none;
+  }
+
+  .about .section__text p {
+    margin-bottom: 14px;
+  }
+
+  .about p:first-of-type br:nth-of-type(1) {
+    display: block;
+  }
+
+  .about p:nth-of-type(2) br:nth-of-type(3),
+  .about p:nth-of-type(2) br:nth-of-type(5),
+  .about p:nth-of-type(2) br:nth-of-type(6) {
+    display: block;
   }
 }

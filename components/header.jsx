@@ -1,6 +1,8 @@
 import AppStore from "./../public/ios-circle.svg"
 import GoogleStore from "./../public/gp-circle.svg"
 import Logo from "./../public/logo.svg"
+import MobileLogo from "./../public/logo-mobile.svg"
+
 import Link from "next/link"
 import OpenMMenu from './../public/open-menu-button.svg'
 import { useRouter } from 'next/router'
@@ -20,8 +22,11 @@ export default function Header() {
     }
 
     const [headerStyles, setHeaderStyles] = useState({})
-
+    const [mode, setMode] = useState()
+    
     useEffect(() => {
+        window.innerWidth < 1440 ? setMode('mobile') : setMode('desktop')
+
         const boundary = window.innerHeight * 6
         const headerTop = 40
 
@@ -39,7 +44,10 @@ export default function Header() {
 
     return (
         <header className={setClasses()} style={headerStyles}>
-            <Logo className="header__logo" />
+            { mode === 'desktop' 
+            ? <Logo className="header__logo" />
+            : <MobileLogo className="header__logo" />
+            }
             <button type="button" className="header__open-menu">
                 <OpenMMenu className="open-menu-icon" />
             </button>

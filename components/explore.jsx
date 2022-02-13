@@ -14,10 +14,11 @@ export default function Explore() {
       sectionClass="explore"
       tag="Explore"
       buttonTitle="Start <br> exploring"
+      mobileButtonTitle="Start"
       buttonColor="#00D0FF"
       buttonHref="https://web.waym.app/quest/181"
-      title="Use your imagination <br> to lose yourself <br> in an infinite variety <br> of text quests"
-      text="Become the main character <br> of the WAYM interactive story <br> and make decisions to change <br> the plot."
+      title="Use your imagination <br> to lose yourself <br> in an infinite variety <br> of <br> text quests"
+      text="Become the main character <br> of the WAYM interactive story <br> and make decisions <br> to change <br> the plot."
       childrenOutOfContainer={getChildrenOutOfContainer()}
     >
 

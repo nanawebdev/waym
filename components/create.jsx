@@ -11,6 +11,7 @@ export default function Create() {
         sectionClass="create"
         tag="Create"
         buttonTitle="Start creating"
+        mobileButtonTitle="Create"
         buttonColor="#FF375F"
         buttonHref="https://builder.waym.app"
         title="Write new stories <br> to expand <br> the metaverse"

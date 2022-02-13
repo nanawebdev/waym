@@ -40,7 +40,7 @@ export default function Start() {
                 <ul>
                     {renderQuestCard()}
                 </ul>
-                <MainButton title="See more" stroke="#00D0FF" href="#" />
+                <MainButton title="See <br> more" stroke="#00D0FF" href="#" />
             </div>
 
 

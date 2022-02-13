@@ -115,7 +115,15 @@
   opacity: 0;
 }
 
+.start .main-button br {
+  display: none;
+}
+
 @media (max-width: $max-mobile-width) {
+  .start .main-button br {
+    display: block;
+  }
+
   .start h3 {
     display: block;
     margin-bottom: 40px;
@@ -136,6 +144,8 @@
 
   .section.start .container {
     padding-right: 0;
+    min-height: 676px;
+    justify-content: flex-end;
   }
 
   .start li {
@@ -162,5 +172,11 @@
 
   .start__text-border {
     height: 232px;
+  }
+
+  .start .main-button {
+    margin-top: 42px;
+    margin-bottom: 8px;
+    margin-right: 20px;
   }
 }

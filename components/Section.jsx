@@ -10,7 +10,8 @@ export default function Section({
     title,
     text,
     childrenOutOfContainer,
-    media
+    media,
+    mobileButtonTitle
 }) {
 
     const cls = ['section']
@@ -42,6 +43,7 @@ export default function Section({
                 {children}
 
                 <MainButton
+                    mobileTitle={mobileButtonTitle}
                     title={buttonTitle}
                     color={buttonColor}
                     href={buttonHref}

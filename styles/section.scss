@@ -84,6 +84,7 @@
   .section__text {
     font-size: 20px;
     line-height: 28px;
+    padding-bottom: 0;
   }
 
   .section__tag {
@@ -100,26 +101,39 @@
   }
 
   .section .container {
-    // display: grid;
-    // grid-template-rows: 80px 1fr 1fr;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
-  // .section__wrapper {
-  //   grid-row: 1 / 2;
-  // }
+  .section__wrapper {
+    position: static;
+    top: auto;
+    transform: none;
+  }
 
-  // .section__media {
-  //   grid-row: 2 / 3;
-  // }
+  .section__media {
+    position: static;
+  }
+
+  .section {
+    height: auto;
+  }
 
   .section__text {
     display: none;
   }
 
   .section__mobile-text {
-    // grid-row: 3 / 4;
     display: block;
+  }
+
+  .section__media .megaphone,
+  .section__media .rocket,
+  .section__media .puzzle {
+    position: static;
+    top: initial;
+    transform: translateY(0);
   }
 }

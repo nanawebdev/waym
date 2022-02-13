@@ -47,7 +47,7 @@
 .section.promo .section__text {
   z-index: 2;
   grid-row: 2 / 3;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   align-self: flex-end;
 }
 
@@ -77,15 +77,18 @@
 
   .section.promo .section__text {
     display: block;
+    margin-bottom: 87px;
   }
 
   .section.promo br {
     display: none;
   }
 
+  .section.promo .main-button br {
+    display: block;
+  }
+
   .section.promo .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 568px;
   }
 }

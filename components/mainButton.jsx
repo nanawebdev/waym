@@ -1,12 +1,35 @@
-export default function MainButton({ title, href, color }) {
+import { useEffect, useState } from "react"
+
+export default function MainButton({ title, href, color, mobileTitle }) {
+    const [mode, setMode] = useState()
+
+    let currentTitle = title
+
+    useEffect(() => {
+        window.innerWidth < 1440 ? setMode('mobile') : setMode('desktop')
+    }, [])
+
+    if (mode === 'desktop') {
+        currentTitle = title
+    }
+
+    if (mode === 'mobile' && mobileTitle !== undefined) {
+        currentTitle = mobileTitle
+    }
+
+
+    if (mode === 'mobile' && mobileTitle === undefined) {
+        currentTitle = title
+    }
+
+
     return (
         <div className="main-button">
-            <a href={href} dangerouslySetInnerHTML={{ __html: title }}></a>
-
+            <a href={href} dangerouslySetInnerHTML={{ __html: currentTitle }}></a>
             <svg className="main-button__bg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="160" height="160" rx="80" fill="#000B29" />
                 <rect x="8" y="8" width="144" height="144" rx="72" stroke="url(#pattern-cta)" strokeOpacity="0.25" strokeWidth="16" />
-                <g style={{'mix-blend-mode':'overlay'}}>
+                <g style={{ 'mix-blend-mode': 'overlay' }}>
                     <rect x="8" y="8" width="144" height="144" rx="72" stroke={color} strokeWidth="16" />
                 </g>
                 <defs>
