@@ -6,21 +6,22 @@ import Invest from '../components/invest'
 import Promo from '../components/promo'
 import Start from '../components/start'
 import Team from '../components/team'
-import ReactPageScroller from 'react-page-scroller'
+// import ReactPageScroller from 'react-page-scroller'
 
 
 export default function Home() {
   return (
     <div className='home'>
-      <ReactPageScroller containerWidth="100%">
+      {/* <ReactPageScroller containerWidth="100%"> */}
         <Promo />
         <Explore />
-        <Create />
-        <Invest />
-        <Start />
-        <About />
-        <Team />
-      </ReactPageScroller>
+      {/* </ReactPageScroller> */}
+      <Create />
+      <Invest />
+      <Start />
+      <About />
+      <Team />
+
     </div>
   )
 }
