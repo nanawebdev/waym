@@ -29,7 +29,7 @@ export default function Layout({ children }) {
                         {children}
                     </main>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
                 {menuIsOpen && <MobileMenu closeMenuFunc={closeMobileMenu} />}
             </div>
         </>
