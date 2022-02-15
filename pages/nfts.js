@@ -2,12 +2,12 @@ import Layout from "../components/layout"
 import MainButton from "../components/mainButton"
 
 const items = [
-  { id: 1, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: '1000' },
-  { id: 2, imgSrc: './nfts-2.jpg', title: 'Simulation anomaly detector', waymItem: 'The Wave', price: '1000' },
-  { id: 3, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: '1000' },
-  { id: 4, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: '1000' },
-  { id: 5, imgSrc: './nfts-2.jpg', title: 'Simulation anomaly detector', waymItem: 'The Wave', price: '1000' },
-  { id: 6, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: '1000' },
+  { id: 1, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: 1000 },
+  { id: 2, imgSrc: './nfts-2.jpg', title: 'Simulation anomaly detector', waymItem: 'The Wave', price: 1000 },
+  { id: 3, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: 1000 },
+  { id: 4, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: 1000 },
+  { id: 5, imgSrc: './nfts-2.jpg', title: 'Simulation anomaly detector', waymItem: 'The Wave', price: 1000 },
+  { id: 6, imgSrc: './nfts-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: 1000 },
 ]
 
 export default function Nfts() {
