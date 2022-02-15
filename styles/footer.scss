@@ -87,10 +87,10 @@
   margin-top: auto;
   color: $light-grey;
   font-size: 14px;
-line-height: 20px;
+  line-height: 20px;
 }
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: $max-tablet-width) {
   .footer input,
   .footer button {
     min-width: initial;
@@ -113,7 +113,7 @@ line-height: 20px;
     flex-direction: column;
   }
 
-  .footer .container  {
+  .footer .container {
     padding-top: 0px;
     padding-bottom: 20px;
   }
@@ -157,4 +157,7 @@ line-height: 20px;
   .footer__wrapper a {
     margin-top: 0;
   }
+}
+
+@media (max-width: $max-mobile-width) {
 }

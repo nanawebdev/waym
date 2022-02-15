@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-// import Footer from './footer'
+import Footer from './footer'
 import Header from './header'
 import MobileMenu from './mobileMenu'
 
@@ -29,7 +29,7 @@ export default function Layout({ children }) {
                         {children}
                     </main>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
                 {menuIsOpen && <MobileMenu closeMenuFunc={closeMobileMenu} />}
             </div>
         </>
