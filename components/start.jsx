@@ -30,10 +30,10 @@ export default function Start() {
     }
 
     return (
-        <section id="start" className="start section">
+        <section id="start" className="start section ui-section">
             <div className="container">
                 <div>
-                    <div className="section__tag">Where to start?</div>
+                    <div className="ui-section__tag">Where to start?</div>
                     <h3>Quests</h3>
                 </div>
 

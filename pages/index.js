@@ -1,16 +1,18 @@
+import Layout from '../components/layout'
 import About from '../components/about'
 import Create from '../components/create'
 import Explore from '../components/explore'
 import Invest from '../components/invest'
-import Layout from '../components/layout'
 import Promo from '../components/promo'
-import Section from '../components/Section'
 import Start from '../components/start'
 import Team from '../components/team'
+import ReactPageScroller from 'react-page-scroller'
+
 
 export default function Home() {
   return (
     <div className='home'>
+      <ReactPageScroller containerWidth="100%">
         <Promo />
         <Explore />
         <Create />
@@ -18,7 +20,7 @@ export default function Home() {
         <Start />
         <About />
         <Team />
-     
+      </ReactPageScroller>
     </div>
   )
 }

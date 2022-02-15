@@ -1,5 +1,5 @@
 import Megaphone from "./megaphone";
-import Section from "./Section";
+import UiSection from "./UiSection";
 
 export default function Create() {
   const setMedia = () => {
@@ -7,7 +7,7 @@ export default function Create() {
   }
 
     return (
-      <Section
+      <UiSection
         sectionClass="create"
         tag="Create"
         buttonTitle="Start creating"
@@ -20,6 +20,6 @@ export default function Create() {
         media={setMedia()}
        >
          
-        </Section>
+        </UiSection>
     )
 }

@@ -1,16 +1,16 @@
-import Section from "./Section";
+import UiSection from "./UiSection";
 import UiVideo from "./uiVideo";
 
 export default function Explore() {
   const getChildrenOutOfContainer = () => {
-    return <div className="section__bg">
+    return <div className="ui-section__bg">
       <UiVideo src="./hyperreality.m4v" />
     </div>
 
   }
 
   return (
-    <Section
+    <UiSection
       sectionClass="explore"
       tag="Explore"
       buttonTitle="Start <br> exploring"
@@ -22,6 +22,6 @@ export default function Explore() {
       childrenOutOfContainer={getChildrenOutOfContainer()}
     >
 
-    </Section>
+    </UiSection>
   )
 }

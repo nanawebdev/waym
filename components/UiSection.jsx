@@ -1,6 +1,6 @@
 import MainButton from "./mainButton";
 
-export default function Section({
+export default function UiSection({
     tag,
     buttonTitle,
     buttonColor,
@@ -14,7 +14,7 @@ export default function Section({
     mobileButtonTitle
 }) {
 
-    const cls = ['section']
+    const cls = ['ui-section']
 
     if(sectionClass !== '') {
         cls.push(sectionClass)
@@ -29,14 +29,14 @@ export default function Section({
             {childrenOutOfContainer}
 
             <div className="container">
-                <div className="section__wrapper">
-                    <p className="section__tag">{tag}</p>
+                <div className="ui-section__wrapper">
+                    <p className="ui-section__tag">{tag}</p>
                     <h3 dangerouslySetInnerHTML={{ __html: title }}></h3>
                 </div>
 
-                <div className="section__text" dangerouslySetInnerHTML={{ __html: text }}></div>
+                <div className="ui-section__text" dangerouslySetInnerHTML={{ __html: text }}></div>
 
-                <div className="section__media">
+                <div className="ui-section__media">
                     {media}
                 </div>
 

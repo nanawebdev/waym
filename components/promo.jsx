@@ -1,11 +1,11 @@
-import Section from "./Section";
+import UiSection from "./UiSection";
 import UiVideo from './uiVideo'
 
 export default function Promo() {
    
 
     function getChildrenOutOfContainer() {
-        return <div className="section__bg">
+        return <div className="ui-section__bg">
             <UiVideo src="https://ik.imagekit.io/9uamvjevwkkw/simona.mp4" />
             <div className="promo__wrapper">
                 <div className="promo__title">Join the WayMaker</div>
@@ -15,7 +15,7 @@ export default function Promo() {
     }
 
     return (
-        <Section
+        <UiSection
             sectionClass="promo"
             buttonTitle="Get <br> started"
             buttonColor="#ffffff"
@@ -26,6 +26,6 @@ export default function Promo() {
     
             childrenOutOfContainer={getChildrenOutOfContainer()}
         >
-        </Section>
+        </UiSection>
     )
 }

@@ -43,10 +43,12 @@ export default function Header({ mode, openMenuFunc }) {
     return (
         <header className={setClasses()} style={headerStyles}>
             <Link href="/">
-                {mode === 'desktop'
-                    ? <Logo className="header__logo" />
-                    : <MobileLogo className="header__logo" />
-                }
+                <a>
+                    {mode === 'desktop'
+                        ? <Logo className="header__logo" />
+                        : <MobileLogo className="header__logo" />
+                    }
+                </a>
             </Link>
             <button type="button" className="header__open-menu" onClick={() => openMenuFunc()}>
                 <OpenMMenu className="open-menu-icon" />

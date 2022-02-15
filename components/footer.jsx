@@ -6,10 +6,9 @@ import Telegram from '../public/telegram.svg'
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer section">
             <div className="container">
                 <form>
-                    <label></label>
                     <input type="text" placeholder="Name" minLength="1" maxLength="100"></input>
                     <input type="text" placeholder="Question" minLength="1" maxLength="500"></input>
                     <input type="email" placeholder="Email" minLength="1" maxLength="100"></input>

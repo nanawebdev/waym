@@ -1,11 +1,30 @@
-.uiVideo {
+.uiVideo video {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: relative;
+}
+
+.uiVideo {
+  height: 100%;
+  width: 100%;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url("../public/pattern-1.svg");
+//     // background-repeat: repeat;
+//     background-position: 0 0;
+//     background-size: cover;
+//     top: 0;
+//     left: 0;
+//     opacity: 0.1;
+//   }
 }
 
 @media (max-width: $max-mobile-width) {
-  .uiVideo {
+  .uiVideo video {
     background-position: center;
   }
 }

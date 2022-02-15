@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.team.section .container {
+.team.ui-section .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +73,7 @@
 
 
 @media (max-width: $max-mobile-width) {
-  .team.section .container {
+  .team.ui-section .container {
     min-height: 706px;
     padding: 0;
     padding-top: 151px;
@@ -81,7 +81,7 @@
     transform: none;
   }
 
-  .team .section__text {
+  .team .ui-section__text {
     display: block;
     margin-bottom: 8px;
   }

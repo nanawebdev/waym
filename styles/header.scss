@@ -25,15 +25,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 16px;
+
+  & a:hover  {
+    opacity: 0.5;
+  }
 }
 
 .header__nav li {
   text-transform: uppercase;
-  // padding: 0 24px;
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 0.04em;
   white-space: nowrap;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .header__nav a {

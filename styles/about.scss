@@ -3,7 +3,7 @@
   background-image: url("./../public/about-bg.svg");
 }
 
-.about .section__tag {
+.about .ui-section__tag {
   display: none;
 }
 
@@ -28,7 +28,7 @@
   grid-template-columns: 38% 1fr;
 }
 
-.about .section__text {
+.about .ui-section__text {
    margin-bottom: 35px;
 }
 
@@ -52,11 +52,11 @@
     padding-top: 147px;
   }
 
-  .about .section__wrapper {
+  .about .ui-section__wrapper {
     margin-top: 0;
   }
 
-  .about .section__media {
+  .about .ui-section__media {
     margin-left: 23px;
   }
 
@@ -70,7 +70,7 @@
     margin-bottom: 56px;
   }
 
-  .about .section__text {
+  .about .ui-section__text {
     margin-top: 70px;
     display: block;
     order: 1;
@@ -81,7 +81,7 @@
     display: none;
   }
 
-  .about .section__text p {
+  .about .ui-section__text p {
     margin-bottom: 14px;
   }
 

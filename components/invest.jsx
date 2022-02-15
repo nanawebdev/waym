@@ -1,6 +1,6 @@
 import MainButton from "./mainButton";
 import Rocket from "./rocket";
-import Section from "./Section";
+import UiSection from "./UiSection";
 
 export default function Invest() {
     const setMedia = () => {
@@ -8,7 +8,7 @@ export default function Invest() {
     }
 
     return (
-        <Section
+        <UiSection
             sectionClass="invest"
             tag="Invest"
             buttonTitle="About <br> WAYM <br> Tokens"
@@ -19,6 +19,6 @@ export default function Invest() {
             media={setMedia()}
         >
 
-        </Section>
+        </UiSection>
     )
 }

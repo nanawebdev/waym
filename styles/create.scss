@@ -4,12 +4,12 @@
   background-image: url("./../public/create-bg.svg");
 }
 
-.create .section__text {
+.create .ui-section__text {
   margin-bottom: 56px;
 }
 
 @media (max-width: $max-mobile-width) {
-  .create .section__wrapper {
+  .create .ui-section__wrapper {
     margin-right: 0;
     margin: 0;
   }
@@ -22,14 +22,14 @@
     display: block;
   }
 
-  .create .section__text {
+  .create .ui-section__text {
     margin-top: 5px;
     margin-bottom: 40px;
     display: block;
     order: 1;
   }
 
-  .create .section__text br:nth-child(3){
+  .create .ui-section__text br:nth-child(3){
     display: block;
   }
 
@@ -37,7 +37,7 @@
     order: 2;
   }
 
-  .create .section__media {
+  .create .ui-section__media {
     margin-left: 5px;
   }
 
@@ -49,11 +49,11 @@
     display: none;
   }
 
-  .create .section__tag {
+  .create .ui-section__tag {
     margin-bottom: 7px;
   }
 
-  .section.create .container {
+  .ui-section.create .container {
     min-height: 852px;
   }
 }

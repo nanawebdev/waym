@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url('./../public/Roboto-900.woff2') format("woff2"),
+  url('./../public/Roboto-900.woff') format("woff");
+}
+
 html,
 body {
   height: 100%;

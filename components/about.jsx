@@ -1,5 +1,5 @@
 import Puzzle from "./puzzle"
-import Section from "./Section"
+import UiSection from "./UiSection"
 
 export default function About() {
     function setMedia() {
@@ -7,7 +7,7 @@ export default function About() {
     }
 
     return (
-        <Section
+        <UiSection
             sectionClass="about"
             buttonTitle="Learn <br> more"
             buttonColor="#ED6E33"
@@ -17,6 +17,6 @@ export default function About() {
                 <p>Community members create their <br> own content and <br> vote <br> for the best <br>  WAYM <br> quests, determining <br> the future of the metaverse.</p>"
             media={setMedia()}
         >
-        </Section>
+        </UiSection>
     )
 }

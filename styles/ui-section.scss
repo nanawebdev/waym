@@ -1,4 +1,4 @@
-.section {
+.ui-section {
   height: 100vh;
   width: 100%;
   position: relative;
@@ -8,13 +8,13 @@
   background-position: center;
 }
 
-.section .container {
+.ui-section .container {
   display: grid;
   grid-template-columns: 43% 1fr;
   grid-template-rows: 1fr max-content;
 }
 
-.section h3 {
+.ui-section h3 {
   font-family: "Roboto", monospace, sans-serif;
   font-weight: 500;
   font-size: 48px;
@@ -22,12 +22,12 @@
   margin-top: 0;
 }
 
-.section__text {
+.ui-section__text {
   font-size: 20px;
   line-height: 32px;
 }
 
-.section__tag {
+.ui-section__tag {
   margin: 0;
   font-size: 20px;
   line-height: 40px;
@@ -36,18 +36,18 @@
   margin-bottom: 8px;
 }
 
-.section__mobile-text {
+.ui-section__mobile-text {
   display: none;
 }
 
-.section__wrapper {
+.ui-section__wrapper {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   grid-column: 1 / 2;
 }
 
-.section__text {
+.ui-section__text {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   z-index: 1;
@@ -55,83 +55,83 @@
   align-self: flex-end;
 }
 
-.section__bg {
+.ui-section__bg {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.section__media {
+.ui-section__media {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 }
 
-.section__media .megaphone,
-.section__media .rocket,
-.section__media .puzzle {
+.ui-section__media .megaphone,
+.ui-section__media .rocket,
+.ui-section__media .puzzle {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 @media (max-width: $max-mobile-width) {
-  .section h3 {
+  .ui-section h3 {
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
   }
 
-  .section__text {
+  .ui-section__text {
     font-size: 20px;
     line-height: 28px;
     padding-bottom: 0;
   }
 
-  .section__tag {
+  .ui-section__tag {
     font-size: 16px;
     line-height: 40px;
     letter-spacing: 0.04em;
     margin-bottom: 0;
   }
 
-  .section__wrapper {
+  .ui-section__wrapper {
     max-width: initial;
     width: 100%;
     margin-top: 45%;
   }
 
-  .section .container {
+  .ui-section .container {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
-  .section__wrapper {
+  .ui-section__wrapper {
     position: static;
     top: auto;
     transform: none;
   }
 
-  .section__media {
+  .ui-section__media {
     position: static;
   }
 
-  .section {
+  .ui-section {
     height: auto;
   }
 
-  .section__text {
+  .ui-section__text {
     display: none;
   }
 
-  .section__mobile-text {
+  .ui-section__mobile-text {
     display: block;
   }
 
-  .section__media .megaphone,
-  .section__media .rocket,
-  .section__media .puzzle {
+  .ui-section__media .megaphone,
+  .ui-section__media .rocket,
+  .ui-section__media .puzzle {
     position: static;
     top: initial;
     transform: translateY(0);
