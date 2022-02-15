@@ -65,20 +65,16 @@
   position: relative;
 }
 
-@media (max-width: $max-mobile-width) {
+
+@media (max-width: $pre-desktop-width) {
+
+}
+
+
+@media (max-width: $max-tablet-width) {
   .header__nav,
   .header__links {
     display: none;
-  }
-
-  .header__logo {
-    width: 64px;
-    height: 64px;
-  }
-
-  .header {
-    top: 0;
-    padding: 20px;
   }
 
   .header__open-menu {
@@ -93,8 +89,22 @@
     padding: 0;
   }
 
+  .header {
+    top: 0;
+    padding: 20px;
+  }
+
+  .header__logo {
+    width: 64px;
+    height: 64px;
+  }
+
   .header__open-menu .open-menu-icon {
     width: 100%;
     height: 100%;
   }
 }
+
+// @media (max-width: $max-mobile-width) {
+
+// }

@@ -28,6 +28,7 @@
 }
 
 .team li {
+  width: 282px;
   cursor: pointer;
 }
 
@@ -71,8 +72,17 @@
   opacity: 1;
 }
 
+.team .ui-section__text {
+  width: 100%;
+  padding: 4px;
+}
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: $pre-desktop-width) {
+
+}
+
+
+@media (max-width: $max-tablet-width) {
   .team.ui-section .container {
     min-height: 706px;
     padding: 0;
@@ -89,7 +99,7 @@
   .team ul {
     width: 100%;
     overflow-x: scroll;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .team h3 {
@@ -104,5 +114,12 @@
     position: relative;
     width: 260px;
     height: 260px;
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .team ul {
+    padding-left: 20px;
   }
 }

@@ -51,7 +51,6 @@ li {
 
 .content {
   flex: 1 0 auto;
-  // position: relative;
 }
 
 html {
@@ -67,6 +66,10 @@ button {
   margin: 0 auto;
   height: 100%;
   max-width: $desktop-content-width;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 0 40px;
+  }
 
   @media (max-width: $max-mobile-width) {
     padding: 0 20px;
@@ -88,4 +91,8 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h3, h4 {
+  white-space: normal;
 }

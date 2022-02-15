@@ -18,22 +18,77 @@
 
 .puzzle__item--1 {
   transform: translate(1%, 15%);
+  animation: puzzle-1 2s cubic-bezier(0.5, 1, 0.89, 1) 0.5s infinite alternate;
 }
 
 .puzzle__item--2 {
   transform: translate(108%, 50%);
+  animation: puzzle-2 1s cubic-bezier(0.5, 1, 0.89, 1) infinite alternate;
 }
 
 .puzzle__item--3 {
   transform: translate(93%, -23%);
+  animation: puzzle-3 1s cubic-bezier(0.5, 1, 0.89, 1) infinite alternate;
 }
 
 .puzzle__item--4 {
   transform: translate(-14%, 11%);
+  animation: puzzle-4 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.3s infinite alternate;
 }
 
 .puzzle__item--5 {
   transform: translate(-31%, 82%);
+  animation: puzzle-5 1s cubic-bezier(0.5, 1, 0.89, 1) 0.9s infinite alternate;
+}
+
+@keyframes puzzle-1 {
+  0% {
+    transform: translate(1%, 15%);
+  }
+
+  100% {
+    transform: translate(1%, 5%);
+  }
+}
+
+@keyframes puzzle-2 {
+  0% {
+    transform: translate(108%, 50%);
+  }
+
+  100% {
+    transform: translate(108%, 45%);
+  }
+}
+
+@keyframes puzzle-3 {
+  0% {
+    transform: translate(93%, -23%);
+  }
+
+  100% {
+    transform: translate(93%, -15%);
+  }
+}
+
+@keyframes puzzle-4 {
+  0% {
+    transform: translate(-14%, 11%);
+  }
+
+  100% {
+    transform: translate(-14%, 21%);
+  }
+}
+
+@keyframes puzzle-5 {
+  0% {
+    transform: translate(-31%, 82%);
+  }
+
+  100% {
+    transform: translate(-31%, 75%);
+  }
 }
 
 @media (max-width: $max-mobile-width) {
@@ -46,29 +101,84 @@
     height: 68%;
     width: 68%;
     transform: translate(1%, 19%);
+    animation: puzzle-1 2s cubic-bezier(0.5, 1, 0.89, 1) 0.5s infinite alternate;
   }
 
   .puzzle__item--2 {
     width: 52%;
     height: 53%;
     transform: translate(112%, 58%);
+    animation: puzzle-2 1s cubic-bezier(0.5, 1, 0.89, 1) infinite alternate;
   }
 
   .puzzle__item--3 {
     width: 41%;
     height: 40%;
     transform: translate(91%, -17%);
+    animation: puzzle-3 1s cubic-bezier(0.5, 1, 0.89, 1) infinite alternate;
   }
 
   .puzzle__item--4 {
     width: 35%;
     height: 33%;
     transform: translate(-18%, 17%);
+    animation: puzzle-4 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.3s infinite alternate;
   }
 
   .puzzle__item--5 {
     width: 59%;
     height: 59%;
     transform: translate(-31%, 89%);
+    animation: puzzle-5 1s cubic-bezier(0.5, 1, 0.89, 1) 0.9s infinite alternate;
+  }
+
+  @keyframes puzzle-1 {
+    0% {
+      transform: translate(1%, 19%);
+    }
+
+    100% {
+      transform: translate(1%, 10%);
+    }
+  }
+
+  @keyframes puzzle-2 {
+    0% {
+      transform: translate(112%, 58%);
+    }
+
+    100% {
+      transform: translate(112%, 65%);
+    }
+  }
+
+  @keyframes puzzle-3 {
+    0% {
+      transform: translate(91%, -17%);
+    }
+
+    100% {
+      transform: translate(91%, -27%);
+    }
+  }
+
+  @keyframes puzzle-4 {
+    0% {
+      transform: translate(-18%, 17%);
+    }
+
+    100% {
+      transform: translate(-18%, 24%);
+    }
+  }
+
+  @keyframes puzzle-5 {
+    0% {
+      transform: translate(-31%, 89%);
+    }
+
+    100% {
+      transform: translate(-31%, 79%);
+    }
   }
 }

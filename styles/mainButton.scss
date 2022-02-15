@@ -52,16 +52,25 @@
   }
 }
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: $pre-desktop-width) {
+}
+
+@media (max-width: $max-tablet-width) {
   .main-button {
     width: 120px;
     height: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
     align-self: center;
   }
 
   .main-button__center {
     width: 90px;
     height: 90px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .main-button {
+    margin-bottom: 20px;
   }
 }

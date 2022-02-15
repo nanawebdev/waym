@@ -1,6 +1,6 @@
 export default function UiVideo({ src }) {
     return (
-        <div class="uiVideo">
+        <div className="uiVideo">
             <video
                 autoPlay
                 src={src}

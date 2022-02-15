@@ -14,9 +14,9 @@ export default function Create() {
         mobileButtonTitle="Create"
         buttonColor="#FF375F"
         buttonHref="https://builder.waym.app"
-        title="Write new stories <br> to expand <br> the metaverse"
-        text="Use our quest builder <br>  to create stories easy and fast. <br> 
-        Release your creative potential <br> and get the reward."
+        title="Write new stories to expand the metaverse"
+        text="Use our quest builder  to create stories easy and fast. 
+        Release your creative potential and get the reward."
         media={setMedia()}
        >
          

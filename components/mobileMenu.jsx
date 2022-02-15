@@ -3,7 +3,7 @@ import Cross from "./../public/cross.svg"
 
 export default function MobileMenu({ closeMenuFunc }) {
     return (
-        <div class="mobile-menu">
+        <div className="mobile-menu">
             <button type="button" onClick={() => closeMenuFunc()}>
                 <Cross />
             </button>

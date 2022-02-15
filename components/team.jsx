@@ -1,7 +1,7 @@
 export default function Team() {
     const team = [
-        { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience <br> in programming and PM', imgSrc: './Minin.jpg', greenImg: './Minin-green.jpg' },
-        { id: 2, name: 'Vitaly Vylgin', job: 'CDO', description: '10 years of experience <br> in programming', imgSrc: './Vylgin.jpg', greenImg: './Vylgin-green.jpg' },
+        { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience in programming and PM', imgSrc: './Minin.jpg', greenImg: './Minin-green.jpg' },
+        { id: 2, name: 'Vitaly Vylgin', job: 'CDO', description: '10 years of experience in programming', imgSrc: './Vylgin.jpg', greenImg: './Vylgin-green.jpg' },
         { id: 3, name: 'Olga Kazimirskaya', job: 'Main script writer', description: 'Author of the game metaverse concept and the central plot line', imgSrc: './Olga.jpg', greenImg: './Olga-green.jpg' },
         { id: 4, name: 'Ilnurri Zakiryanov', job: 'DEO', description: '8 years of design', imgSrc: './iz.jpg', greenImg: './iz-green.jpg' },
     ]

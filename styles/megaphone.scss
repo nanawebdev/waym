@@ -28,27 +28,74 @@
   width: 12%;
   height: 31%;
   transform: translate(220%, 110%);
+  animation: 1s bubbleScaling-1 cubic-bezier(0.33, 1, 0.68, 1) 0.9s infinite alternate;
 }
 
 .megaphone__img--3 {
   width: 18%;
   height: 46%;
   transform: translate(206%, 110%);
+  animation: 2s bubbleScaling-2 cubic-bezier(0.33, 1, 0.68, 1) infinite alternate;
 }
 
 .megaphone__img--4 {
   width: 24%;
   height: 63%;
   transform: translate(200%, 0%);
+  animation: 1s bubbleScaling-3 cubic-bezier(0.33, 1, 0.68, 1) 1.2s infinite alternate;
 }
 
 .megaphone__img--5 {
   width: 30%;
   height: 78%;
   transform: translate(234%, 27%);
+  animation: 2s bubbleScaling-4 cubic-bezier(0.33, 1, 0.68, 1) 2s infinite alternate;
 }
 
-@media (max-width: $max-mobile-width) {
+@keyframes bubbleScaling-1 {
+  0% {
+    transform: translate(220%, 110%) scale(1);
+  }
+
+  0% {
+    transform: translate(220%, 110%) scale(1.2);
+  }
+}
+
+@keyframes bubbleScaling-2 {
+  0% {
+    transform: translate(206%, 110%) scale(1);
+  }
+
+  0% {
+    transform: translate(206%, 110%) scale(1.2);
+  }
+}
+
+@keyframes bubbleScaling-3 {
+  0% {
+    transform: translate(200%, 0%) scale(0);
+  }
+
+  0% {
+    transform: translate(200%, 0%) scale(0.8);
+  }
+}
+
+@keyframes bubbleScaling-4 {
+  0% {
+    transform: translate(234%, 27%) scale(0);
+  }
+
+  0% {
+    transform: translate(234%, 27%) scale(0.9);
+  }
+}
+
+@media (max-width: $pre-desktop-width) {
+}
+
+@media (max-width: $max-tablet-width) {
   .megaphone {
     width: 280px;
     height: 200px;
@@ -82,4 +129,7 @@
     height: 29%;
     transform: translate(156%, 121%);
   }
+}
+
+@media (max-width: $max-mobile-width) {
 }

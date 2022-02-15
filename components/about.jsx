@@ -13,8 +13,8 @@ export default function About() {
             buttonColor="#ED6E33"
             buttonHref="https://whitepaper.waym.app/"
             title="About <br> WayMaker"
-            text="<p>The continuously developing chain <br> of interactive stories united <br>  by the central plotline.</p>
-                <p>Community members create their <br> own content and <br> vote <br> for the best <br>  WAYM <br> quests, determining <br> the future of the metaverse.</p>"
+            text="<p>The continuously developing chain of interactive stories united  by the central plotline.</p>
+                <p>Community members create their own content and vote for the best  WAYM quests, determining the future of the metaverse.</p>"
             media={setMedia()}
         >
         </UiSection>

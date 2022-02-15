@@ -20,10 +20,9 @@ export default function Promo() {
             buttonTitle="Get <br> started"
             buttonColor="#ffffff"
             buttonHref="https://web.waym.app/quest/181"
-            text="Find your own way through <br>
-                our interactive text metaverse <br>
+            text="Find your own way through
+                our interactive text metaverse
                 created by its users."
-    
             childrenOutOfContainer={getChildrenOutOfContainer()}
         >
         </UiSection>

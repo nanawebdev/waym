@@ -65,7 +65,7 @@
 
 .start .ui-section__tag {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .start h4 {
@@ -82,7 +82,7 @@
 
 .start .main-button {
   align-self: center;
-  margin-top: 120px;
+  margin-top: 98px;
 }
 
 .start__text-border {
@@ -123,7 +123,12 @@
   display: none;
 }
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: $pre-desktop-width) {
+
+}
+
+
+@media (max-width: $max-tablet-width) {
   .start .main-button br {
     display: block;
   }
@@ -180,7 +185,11 @@
 
   .start .main-button {
     margin-top: 42px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     margin-right: 20px;
   }
+}
+
+@media (max-width: $max-mobile-width) {
+
 }
