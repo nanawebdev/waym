@@ -6,7 +6,7 @@ export default function Promo() {
     const [video, setVideo] = useState()
 
     useEffect(() => {
-      window.innerWidth > 1200 
+      window.innerWidth > 320 
       ? setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona.mp4")
       : setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona_portrait.mp4")
         
