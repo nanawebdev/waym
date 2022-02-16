@@ -53,18 +53,7 @@
 }
 
 .promo .ui-section__bg {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://s3-alpha-sig.figma.com/img/46ff/6511/4e76392c8df7e43c4bcae2283857ef86?Expires=1646006400&amp;Signature=S~WySbsWvV2JvfVPTS2fpoJ-E3hWRxayAUhY1jhPMGqgEO1f7lLrFFjVV4ICNqzS2V4YV3E8maHaqZX8HB3pDx6PCHjk7CC7ijZ06GjJj0uV3KDZuRPeEq3GZI96zzh3aFjqKx5lD~xY4uSDgS~~n7cCrCv3e1XZ4sI4euaZfLhxO1rj8BqEHdf5k7s6Nfj5PoLO9D0evjetS9xhGcFFVNuT2HLFjaaNj9AIM7BEQMyYY~LMG5zHebyBJWxw3rxh7QdNh1AiuCTAvB-1qIO2hyHYZ8gn8DKVOMdBIcPoAqiiaUBPK-8d7VmTZCMR90CENys6sjIPQqVh-GIamZgKpA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-    background-size: cover;
-  }
+  position: absolute;
 }
 
 .ui-section.promo {

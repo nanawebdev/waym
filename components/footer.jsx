@@ -141,7 +141,7 @@ export default function Footer() {
                     <input
                         onChange={e => emailHandler(e)}
                         onBlur={e => blurHandler(e)}
-                        type="email"
+                        type="text"
                         placeholder="Email"
                         minLength="1"
                         maxLength="100"
