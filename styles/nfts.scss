@@ -1,5 +1,4 @@
 .nfts {
-  padding: 80px;
   padding-top: 139px;
   padding-left: 120px;
   padding-right: 120px;
@@ -12,6 +11,7 @@
 }
 
 .nfts ul {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   margin: 0;
@@ -22,6 +22,7 @@
 .nfts li {
   position: relative;
   height: 336px;
+  width: 368px;
   cursor: pointer;
 }
 
@@ -47,7 +48,7 @@
   padding: 20px;
   padding-bottom: 24px;
   padding-top: 188px;
-  width: 368px;
+  width: 100%;
   height: 316px;
   border: 2px solid rgba($basic-white, 0.25);
   position: relative;
@@ -161,7 +162,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  // align-items: center;
 }
 
 .nfts .header {
@@ -181,19 +181,29 @@
   align-items: center;
 }
 
-// от 1440 иначе не влезет
+@media (max-width: $pre-desktop-width) {
+  .nfts {
+    padding: 40px;
+    padding-top: 130px;
+  }
 
-@media (max-width: $max-tablet-width) {
-  // От 1439 до максимально маленького возможного значения
-  .nfts ul {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-gap: 40px;
-    row-gap: 40px;
+  .nfts li {
+    width: 330px;
+    height: 275px;
+  }
+
+  .nfts__img {
+    width: 290px;
+    height: 175px;
   }
 }
 
-@media (max-width: $max-mobile-width) {
+@media (max-width: $max-tablet-width) {
+  .nfts {
+    padding: 20px;
+    padding-top: 124px;
+  }
+
   .nfts ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -213,13 +223,14 @@
 
   .nfts li {
     margin: 0 auto;
+    width: 280px;
     height: 275px;
   }
 
   .nfts__wrapper {
     padding: 20px;
     padding-top: 131px;
-    width: 280px;
+    // width: 280px;
     height: 255px;
 
     &::after {
@@ -286,4 +297,8 @@
   .nfts.container {
     padding-bottom: 36px;
   }
+}
+
+@media (max-width: $max-mobile-width) {
+ 
 }

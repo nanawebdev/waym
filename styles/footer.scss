@@ -19,12 +19,20 @@
   border: 1px solid $primary-dark;
   color: $primary-dark;
   padding: 48px 40px;
+  font-weight: 400;
   width: 560px;
-  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   margin: 6px 0;
   background-color: transparent;
+}
+
+.footer input::placeholder {
+  font-weight: 400;
+}
+
+.footer input {
+  font-weight: 700;
 }
 
 .footer input::placeholder {
