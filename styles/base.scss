@@ -67,7 +67,7 @@ button {
   height: 100%;
   max-width: $desktop-content-width;
 
-  @media (max-width: $max-tablet-width) {
+  @media (max-width: $pre-desktop-width) {
     padding: 0 40px;
   }
 

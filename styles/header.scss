@@ -67,7 +67,10 @@
 
 
 @media (max-width: $pre-desktop-width) {
-
+  .header {
+    max-width: 100%;
+    padding: 0 40px;
+  }
 }
 
 

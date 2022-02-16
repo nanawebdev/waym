@@ -16,29 +16,29 @@ export default function Footer() {
                 </form>
                 <section>
                     <h3 className="visually-hidden">Links</h3>
-                    <a href="web.waym.app/quests">Go to quests</a>
-                    <a href=" https://waym.app/terms.html">Agreements</a>
+                    <a href="https://web.waym.app/quests" target="_blank">Go to quests</a>
+                    <a href="https://waym.app/terms.html" target="_blank">Agreements</a>
                     
                     <div className="footer__wrapper">
                         <span>download:</span>
                         <div className="footer__line"></div>
-                        <a href="https://apps.apple.com/ru/app/waym/id1584818031">
+                        <a href="https://apps.apple.com/ru/app/waym/id1584818031" target="_blank">
                             <AppStore width="24" height="24" />
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=ru.waymaker.app&hl=ru">
+                        <a href="https://play.google.com/store/apps/details?id=ru.waymaker.app&hl=ru" target="_blank">
                             <GooglePlay width="24" height="24" />
                         </a>
                     </div>
                     <div className="footer__wrapper">
                         <span>subscribe:</span>
                         <div className="footer__line"></div>
-                        <a href="">
+                        <a href="https://www.instagram.com/waymaker.official/" target="_blank">
                             <Instagram width="24" height="24" />
                         </a>
-                        <a href="">
+                        <a href="https://t.me/waymmaker" target="_blank">
                             <Telegram width="24" height="24" />
                         </a>
-                        <a href="">
+                        <a href="https://www.facebook.com/groups/waymaker.official" target="_blank">
                             <Facebook width="24" height="24" />
                         </a>
 

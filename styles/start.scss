@@ -124,7 +124,10 @@
 }
 
 @media (max-width: $pre-desktop-width) {
-
+  .start li {
+    width: 248px;
+    height: 226px
+  }
 }
 
 
@@ -190,6 +193,6 @@
   }
 }
 
-@media (max-width: $max-mobile-width) {
+// @media (max-width: $max-mobile-width) {
 
-}
+// }

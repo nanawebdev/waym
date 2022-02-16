@@ -4,6 +4,7 @@
 
 .team ul {
   display: flex;
+  justify-content: center;
   color: $primary-green;
   margin: 0;
   padding: 0;
@@ -78,7 +79,9 @@
 }
 
 @media (max-width: $pre-desktop-width) {
-
+  .team li {
+    width: 252px;
+  }
 }
 
 
@@ -98,8 +101,10 @@
 
   .team ul {
     width: 100%;
+    justify-content: flex-start;
     overflow-x: scroll;
-    padding-left: 40px;
+    padding-left: 40px; 
+    padding-right: 40px;
   }
 
   .team h3 {
@@ -115,11 +120,16 @@
     width: 260px;
     height: 260px;
   }
+
+  .team li {
+    width: 282px;
+  }
 }
 
 
 @media (max-width: $max-mobile-width) {
   .team ul {
     padding-left: 20px;
+    padding-right: 20px;
   }
 }

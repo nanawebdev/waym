@@ -17,7 +17,7 @@ export default function Layout({ children }) {
     }
 
     useEffect(() => {
-        window.innerWidth < 1440 ? setMode('mobile') : setMode('desktop')
+        window.innerWidth < 1200 ? setMode('mobile') : setMode('desktop')
     }, [])
 
     return (

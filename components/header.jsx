@@ -44,7 +44,8 @@ export default function Header({ mode, openMenuFunc }) {
         <header className={setClasses()} style={headerStyles}>
             <Link href="/">
                 <a>
-                    {mode === 'desktop'
+                    {
+                     mode === 'desktop'
                         ? <Logo className="header__logo" />
                         : <MobileLogo className="header__logo" />
                     }
@@ -56,10 +57,10 @@ export default function Header({ mode, openMenuFunc }) {
             <Navigation additionalClass="header__nav" />
 
             <div className="header__links">
-                <a href="https://apps.apple.com/ru/app/waym/id1584818031">
+                <a href="https://apps.apple.com/ru/app/waym/id1584818031" target="_blank">
                     <AppStore width="64" height="64" />
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=ru.waymaker.app&hl=ru">
+                <a href="https://play.google.com/store/apps/details?id=ru.waymaker.app&hl=ru" target="_blank">
                     <GoogleStore width="64" height="64" />
                 </a>
             </div>

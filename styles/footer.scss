@@ -90,6 +90,14 @@
   line-height: 20px;
 }
 
+@media (max-width: $pre-desktop-width) {
+  .footer input,
+  .footer button,
+  .footer__wrapper {
+    width: 460px;
+  }
+}
+
 @media (max-width: $max-tablet-width) {
   .footer input,
   .footer button {
@@ -123,6 +131,7 @@
   }
 
   .footer__wrapper {
+    width: 100%;
     max-width: 100%;
     margin-top: 40px;
   }
@@ -159,5 +168,5 @@
   }
 }
 
-@media (max-width: $max-mobile-width) {
-}
+// @media (max-width: $max-mobile-width) {
+// }

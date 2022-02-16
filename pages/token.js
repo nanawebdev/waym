@@ -9,14 +9,12 @@ export default function Token() {
                     It represents a piece of value in&nbsp;WayMaker metaverse
                     — players use it for playing quests, and creators get
                     is as reward for a good work</h3>
-
                 <div className="ui-section__text">
                     <p>We will start public sale on March 2022.</p>
                     <p>Register now for get a pre-sale bonus!</p>
                 </div>
-                <MainButton title="Register" color="#ffffff" />
+                <MainButton title="Register" href="https://web.waym.app/login" />
             </div>
-
         </section>
     )
 }

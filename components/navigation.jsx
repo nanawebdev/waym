@@ -7,13 +7,13 @@ export default function Navigation({additionalClass, closeMenuFunc}) {
             if(closeMenuFunc !== undefined) {closeMenuFunc()}
         }}>
             <li>
-                <a href="#start">Quests</a>
+                <a href="/#start">Quests</a>
             </li>
             <li>
-                <a href="https://builder.waym.app">Builder</a>
+                <a href="https://builder.waym.app/" target="_blank">Builder</a>
             </li>
             <li>
-                <a href="https://whitepaper.waym.app">White Paper</a>
+                <a href="https://whitepaper.waym.app" target="_blank">White Paper</a>
             </li>
             <li>
                 <Link href="/nfts">

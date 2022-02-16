@@ -4,7 +4,7 @@ import UiVideo from "./uiVideo";
 export default function Explore() {
   const getChildrenOutOfContainer = () => {
     return <div className="ui-section__bg">
-      <UiVideo src="./hyperreality.m4v" />
+      <UiVideo src="https://ik.imagekit.io/9uamvjevwkkw/hyperreality_land.m4v" />
     </div>
 
   }

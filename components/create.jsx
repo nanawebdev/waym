@@ -10,7 +10,7 @@ export default function Create() {
       <UiSection
         sectionClass="create"
         tag="Create"
-        buttonTitle="Start creating"
+        buttonTitle="Start <br> creating"
         mobileButtonTitle="Create"
         buttonColor="#FF375F"
         buttonHref="https://builder.waym.app"
