@@ -25,6 +25,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 16px;
+  row-gap: 16px;
+  grid-gap: 16px;
 
   & a:hover  {
     opacity: 0.5;
@@ -36,7 +38,7 @@
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 0.04em;
-  white-space: nowrap;
+  max-width: 141px;
 
   &:hover {
     opacity: 0.5;
@@ -46,6 +48,7 @@
 .header__nav a {
   text-decoration: none;
   font-weight: 700;
+  white-space: normal;
 }
 
 .header__logo {

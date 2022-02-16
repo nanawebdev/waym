@@ -160,16 +160,20 @@ export default function Footer() {
                     <div className="footer__wrapper">
                         <span>download:</span>
                         <div className="footer__line"></div>
+
+
                         <a href="https://apps.apple.com/ru/app/waym/id1584818031" target="_blank">
                             <AppStore width="24" height="24" />
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=ru.waymaker.app&hl=ru" target="_blank">
                             <GooglePlay width="24" height="24" />
                         </a>
+
                     </div>
                     <div className="footer__wrapper">
                         <span>subscribe:</span>
                         <div className="footer__line"></div>
+
                         <a href="https://www.instagram.com/waymaker.official/" target="_blank">
                             <Instagram width="24" height="24" />
                         </a>
@@ -179,6 +183,8 @@ export default function Footer() {
                         <a href="https://www.facebook.com/groups/waymaker.official" target="_blank">
                             <Facebook width="24" height="24" />
                         </a>
+
+
 
                     </div>
                     <div className='footer__copyright'>© 2021 WayMaker. Все права защищены</div>
