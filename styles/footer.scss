@@ -45,6 +45,24 @@
   line-height: 28px;
   border-color: $light-blue;
   color: $light-blue;
+
+  &:hover {
+    background-color: rgba($bright-blue, 0.1);
+  }
+
+  &:active {
+    background-color: rgba($bright-blue, 0.4);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    border-color: $light-grey;
+    color: $light-grey;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }
 
 .footer section {
@@ -96,6 +114,13 @@
   color: $light-grey;
   font-size: 14px;
   line-height: 20px;
+}
+
+.footer__error {
+  color: $create-color;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 @media (max-width: $pre-desktop-width) {

@@ -3,6 +3,7 @@ import MainButton from "../components/mainButton"
 import Modal from "../components/modal"
 import { useState } from "react"
 import Play from "./../public/play.svg"
+import Loader from "../components/loader"
 
 const items = [
   { id: 1, imgSrc: './nft-1.jpg', title: 'Monica’s gun for jumping between simulations', waymItem: 'The Wave', price: 1000, videoSrc: "./hyperreality.m4v" },
@@ -60,7 +61,7 @@ export default function Nfts() {
         {
           items.length !== 0
             ? renderNftsItems()
-            : <div>Загрузка...</div>
+            : <Loader />
         }
       </ul>
 
