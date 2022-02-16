@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.explore .ui-video {
+.explore .uiVideo {
   position: relative;
 
   &::after {
@@ -44,14 +44,14 @@
   display: none;
 }
 
-@media (max-width: $pre-desktop-width) {
+// @media (max-width: $pre-desktop-width) {
 
-}
+// }
 
 
-@media (max-width: $max-tablet-width) {
+// @media (max-width: $max-tablet-width) {
 
-}
+// }
 
 @media (max-width: $max-mobile-width) {
   .ui-section.explore h3 {
