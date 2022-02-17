@@ -6,13 +6,13 @@ import Invest from '../components/invest'
 import Promo from '../components/promo'
 import Start from '../components/start'
 import Team from '../components/team'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import WheelIndicator from 'wheel-indicator'
 
 export default function Home() {
 
   useEffect(() => {
-    if (window.innerWidth > 1200 ) {
+    // if (window.innerWidth > 1200 ) {
       new WheelIndicator({
         elem: document,
         callback: function (e) {
@@ -28,9 +28,7 @@ export default function Home() {
         },
         preventMouse: false
       })
-    }
-
-    // window.addEventListener('scroll', handleScroll)
+    // }
   }, [])
 
 

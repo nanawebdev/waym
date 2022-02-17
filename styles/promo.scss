@@ -67,9 +67,10 @@
 }
 
 @media (max-width: $pre-desktop-width) {
-
+  .ui-section.promo {
+    height: 100vh;
+  }
 }
-
 
 @media (max-width: $max-tablet-width) {
   .promo__wrapper {

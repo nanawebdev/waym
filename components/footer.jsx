@@ -19,15 +19,15 @@ export default function Footer() {
     const [questionDirty, setQuestionDirty] = useState(false)
     const [emailDirty, setEmailDirty] = useState(false)
 
-    const [nameError, setNameError] = useState('Заполните поле имя')
-    const [questionError, setQuestionError] = useState('Напишите ваш вопрос')
-    const [emailError, setEmailError] = useState('Заполните поле email')
+    const [nameError, setNameError] = useState('Fill the field')
+    const [questionError, setQuestionError] = useState('Fill the field')
+    const [emailError, setEmailError] = useState('Fill the field')
 
     const [formValid, setFormValid] = useState(false)
 
     const [captchaObject, setCaptchaObject] = useState(null)
     const [captchaDirty, setCaptchaDirty] = useState(false)
-    const [captchaError, setCaptchaError] = useState('Заполните поле капчи')
+    const [captchaError, setCaptchaError] = useState('Fill the field')
 
     useEffect(() => {
         if (nameError || questionError || emailError) {
@@ -61,7 +61,7 @@ export default function Footer() {
                 }
                 if (response === 'error') {
                     captchaValid = false
-                    setCaptchaError('Неверная каптча')
+                    setCaptchaError('Incorrect captcha')
                 }
             }
         }))
@@ -71,7 +71,7 @@ export default function Footer() {
         setName(e.target.value)
 
         if (e.target.value === '') {
-            setNameError('Поле не должно быть пустым')
+            setNameError('Field should not be empty')
         } else {
             setNameError('')
         }
@@ -81,7 +81,7 @@ export default function Footer() {
         setCaptcha(e.target.value)
 
         if (e.target.value === '') {
-            setCaptchaError('Поле не должно быть пустым')
+            setCaptchaError('Field should not be empty')
         } else {
             setCaptchaError('')
         }
@@ -91,7 +91,7 @@ export default function Footer() {
         setEmail(e.target.value)
 
         if (e.target.value === '') {
-            setEmailError('Поле не должно быть пустым')
+            setEmailError('Field should not be empty')
         } else {
             setEmailError('')
         }
@@ -101,7 +101,7 @@ export default function Footer() {
         setQuestion(e.target.value)
 
         if (e.target.value === '') {
-            setQuestionError('Поле не должно быть пустым')
+            setQuestionError('Field should not be empty')
         } else {
             setQuestionError('')
         }
@@ -128,6 +128,13 @@ export default function Footer() {
         }
     }
 
+    function clearInputs() {
+        setName('')
+        setQuestion('')
+        setEmail('')
+        setCaptcha('')
+    }
+
     async function sendData() {
         try {
             await axios.get('https://data.waym.app/common/feedback', {
@@ -137,10 +144,12 @@ export default function Footer() {
                     offer: question,
                 }
             })
-            window.alert('Сообщение отправлено')
+            window.alert('Your message was successfully sent')
+            clearInputs()
+            
         } catch (error) {
             console.log(error);
-            window.alert('Сообщение не отправлено')
+            window.alert('Your message was not sent')
         }
     }
 
@@ -232,7 +241,7 @@ export default function Footer() {
 
 
                     </div>
-                    <div className='footer__copyright'>© 2021 WayMaker. Все права защищены</div>
+                    <div className='footer__copyright'>© 2021 WayMaker. All rights reserved</div>
                 </section>
             </div>
 
