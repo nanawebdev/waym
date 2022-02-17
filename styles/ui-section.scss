@@ -89,8 +89,7 @@
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 0;
-    align-self: flex-start;
-    // align-self: center;
+    align-self: center;
   }
 
   .ui-section__tag {
@@ -102,7 +101,6 @@
 
   .ui-section__wrapper {
     max-width: initial;
-    width: 100%;
     margin-top: 45%;
     position: static;
     top: auto;
@@ -115,6 +113,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .ui-section .container h3 {
+    // align-self: center;
+    text-align: center;
   }
 
   .ui-section__media {
@@ -143,13 +146,21 @@
     font-size: 20px;
     line-height: 28px;
     width: 100%;
+    align-self: flex-start;
   }
 
-  .ui-section h3 {
+  .ui-section .container h3 {
     width: 100%;
+    text-align: left;
   }
+
 
   .ui-section .container  {
     align-items: flex-start;
+  }
+
+  
+  .ui-section__wrapper {
+    width: 100%;
   }
 }

@@ -78,11 +78,11 @@
   }
 
   .ui-section.promo .ui-section__text {
-    align-self: center;
-  }
-
-  .ui-section.promo .ui-section__text {
-    margin-bottom: 87px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
   }
 
   .ui-section.promo br {
@@ -94,13 +94,9 @@
   }
 
   .ui-section.promo .container {
-    padding-top: 228px;
+    // padding-top: 228px;
     padding-bottom: 20px;
-  }
-}
-
-@media (max-width: $max-mobile-width) {
-  .ui-section.promo .ui-section__text {
-    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
   }
 }

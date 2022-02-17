@@ -9,26 +9,30 @@ import Team from '../components/team'
 import React, { useEffect } from 'react'
 import WheelIndicator from 'wheel-indicator'
 
+let indicator = null
+
 export default function Home() {
 
   useEffect(() => {
-    // if (window.innerWidth > 1200 ) {
-      new WheelIndicator({
+      indicator = new WheelIndicator({
         elem: document,
         callback: function (e) {
           if (e.direction === 'down' && window.scrollY < window.innerHeight) {
+            indicator.setOptions({preventMouse: true})
             window.scrollTo(0, window.innerHeight)
             return
           }
   
           if (e.direction === 'up' && window.scrollY <= window.innerHeight) {
+            indicator.setOptions({preventMouse: true})
             window.scrollTo(0,  0)
             return
           }
+
+          indicator.setOptions({preventMouse: false})
         },
-        preventMouse: false
+        preventMouse: true
       })
-    // }
   }, [])
 
 
