@@ -9,13 +9,14 @@
 }
 
 .footer form {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   margin-right: 80px;
 }
 
 .footer input,
 .footer button {
+  display: block;
   border: 1px solid $primary-dark;
   color: $primary-dark;
   padding: 48px 40px;
@@ -63,6 +64,10 @@
       background-color: transparent;
     }
   }
+}
+
+.footer canvas {
+  margin-top: 16px;
 }
 
 .footer section {
@@ -137,7 +142,7 @@
     min-width: initial;
     width: 100%;
     padding: 26px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
   .footer button {
@@ -199,7 +204,8 @@
   .footer__wrapper a {
     margin-top: 0;
   }
-}
 
-// @media (max-width: $max-mobile-width) {
-// }
+  .footer .jCaptcha {
+    font-size: 16px;
+  }
+}

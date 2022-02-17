@@ -33,7 +33,7 @@
 
     .invest .main-button {
         order: 2;
-        margin-bottom: 42px;
+        margin-bottom: 0;
     }
 
     .invest .main-button br {
@@ -45,12 +45,17 @@
       }
 
       .ui-section.invest .container {
-          min-height: 892px;
+        padding-top: 135px;
+        padding-bottom: 42px;
       }
 
       .invest .ui-section__wrapper,
       .invest .ui-section__text {
           padding: 0 20px;
+      }
+
+      .invest .ui-section__wrapper {
+          margin: 0;
       }
 
       .invest .ui-section__tag {
@@ -65,10 +70,8 @@
 @media (max-width: $max-mobile-width) {
     .ui-section.invest .container {
         padding: 0;
-    }
-
-    .invest .main-button {
-        margin-bottom: 6px;
+        padding-top: 135px;
+        padding-bottom: 22px;
     }
 
     .invest .ui-section__media {

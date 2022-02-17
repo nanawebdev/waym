@@ -5,11 +5,15 @@ import Instagram from '../public/instagram.svg'
 import Telegram from '../public/telegram.svg'
 import { useEffect, useState } from 'react'
 import jCaptcha from 'js-captcha'
+import axios from "axios";
+
+let captchaValid = false
 
 export default function Footer() {
     const [name, setName] = useState('')
     const [question, setQuestion] = useState('')
     const [email, setEmail] = useState('')
+    const [captcha, setCaptcha] = useState('')
 
     const [nameDirty, setNameDirty] = useState(false)
     const [questionDirty, setQuestionDirty] = useState(false)
@@ -21,16 +25,47 @@ export default function Footer() {
 
     const [formValid, setFormValid] = useState(false)
 
+    const [captchaObject, setCaptchaObject] = useState(null)
+    const [captchaDirty, setCaptchaDirty] = useState(false)
+    const [captchaError, setCaptchaError] = useState('Заполните поле капчи')
+
     useEffect(() => {
         if (nameError || questionError || emailError) {
             setFormValid(false)
         }
 
-        if (nameError && questionError && emailError) {
+        if (!nameError && !questionError && !emailError) {
             setFormValid(true)
         }
 
     }, [nameError, questionError, emailError])
+
+    useEffect(() => {
+        setCaptchaObject(new jCaptcha({
+            el: '.jCaptcha',
+            canvasClass: 'jCaptchaCanvas',
+            canvasStyle: {
+                // required properties for captcha stylings:
+                width: 100,
+                height: 20,
+                textBaseline: 'top',
+                font: '20px Roboto',
+                textAlign: 'left',
+                fillStyle: '#000'
+            },
+            // set callback function for success and error messages:
+            callback: function(response) {
+                if (response === 'success') {
+                    captchaValid = true
+                    setCaptchaError('')
+                }
+                if (response === 'error') {
+                    captchaValid = false
+                    setCaptchaError('Неверная каптча')
+                }
+            }
+        }))
+    }, [])
 
     const nameHandler = (e) => {
         setName(e.target.value)
@@ -39,6 +74,16 @@ export default function Footer() {
             setNameError('Поле не должно быть пустым')
         } else {
             setNameError('')
+        }
+    }
+
+    const captchaHandler = (e) => {
+        setCaptcha(e.target.value)
+
+        if (e.target.value === '') {
+            setCaptchaError('Поле не должно быть пустым')
+        } else {
+            setCaptchaError('')
         }
     }
 
@@ -66,6 +111,7 @@ export default function Footer() {
         userName: () => setNameDirty(true),
         userEmail: () => setEmailDirty(true),
         userQuestion: () => setQuestionDirty(true),
+        userCaptcha: () => setCaptchaDirty(true),
     }
 
     const blurHandler = (e) => {
@@ -73,84 +119,83 @@ export default function Footer() {
         return handler()
     }
 
-    // function onSubmitHandler(e) {
-    //     e.preventDefault()
+    async function onSubmitHandler(e) {
+        e.preventDefault()
+        captchaObject.validate()
 
-    //     if (!formValid) {
-    //        const data = `userName=${name}&userQuestion=${question}&userEmail=${email}`
-    //     }
+        if (formValid && captchaValid) {
+            sendData()
+        }
+    }
 
-    //     return `https://data.waym.app/common/feedback&${data}`
-    // }
-
-    // let myCaptcha = new jCaptcha({
-    //     el: '.jCaptcha',
-    //     canvasClass: 'jCaptchaCanvas',
-    //     canvasStyle: {
-    //         // required properties for captcha stylings:
-    //         width: 100,
-    //         height: 15,
-    //         textBaseline: 'top',
-    //         font: '15px Arial',
-    //         textAlign: 'left',
-    //         fillStyle: '#ddd'
-    //     },
-    //     // set callback function for success and error messages:
-    //     callback: ( response, $captchaInputElement, numberOfTries ) => {
-    //         if ( response == 'success' ) {
-    //             // success handle, e.g. continue with form submit
-    //         }
-    //         if ( response == 'error' ) {
-    //             // error handle, e.g. add error class to captcha input
-
-    //             if (numberOfTries === 3) {
-    //                 // maximum attempts handle, e.g. disable form
-    //             }
-    //         }
-    //     }
-    // });
+    async function sendData() {
+        try {
+            await axios.get('https://data.waym.app/common/feedback', {
+                params: {
+                    name: name,
+                    email: email,
+                    offer: question,
+                }
+            })
+            window.alert('Сообщение отправлено')
+        } catch (error) {
+            console.log(error);
+            window.alert('Сообщение не отправлено')
+        }
+    }
 
     return (
         <footer className="footer section">
             <div className="container">
-                <form method="POST" action="">
+                <form method="get" onSubmit={onSubmitHandler}>
 
                     {(nameDirty && nameError) && <div className='footer__error'>{nameError}</div>}
                     <input
-                        onChange={e => nameHandler(e)}
-                        onBlur={e => blurHandler(e)}
+                        onChange={nameHandler}
+                        onBlur={blurHandler}
                         type="text"
                         placeholder="Name"
                         minLength="1"
                         maxLength="100"
                         name="userName"
+                        value={name}
                     />
 
                     {(questionDirty && questionError) && <div className='footer__error'>{questionError}</div>}
                     <input
-                        onChange={e => questionHandler(e)}
-                        onBlur={e => blurHandler(e)}
+                        onChange={questionHandler}
+                        onBlur={blurHandler}
                         type="text"
                         placeholder="Question"
                         minLength="1"
                         maxLength="500"
                         name="userQuestion"
+                        value={question}
                     />
 
                     {(emailDirty && emailError) && <div className='footer__error'>{emailError}</div>}
                     <input
-                        onChange={e => emailHandler(e)}
-                        onBlur={e => blurHandler(e)}
+                        onChange={emailHandler}
+                        onBlur={blurHandler}
                         type="text"
                         placeholder="Email"
                         minLength="1"
                         maxLength="100"
                         name="userEmail"
+                        value={email}
                     />
 
-                    <input className="jCaptcha" type="text" placeholder="Type in result please" />
+                    {(captchaDirty && captchaError) && <div className='footer__error'>{captchaError}</div>}
+                    <input
+                        onChange={captchaHandler}
+                        onBlur={blurHandler}
+                        className="jCaptcha"
+                        type="text"
+                        placeholder="Type in result please"
+                        name="userCaptcha"
+                    />
 
-                    <button disabled={formValid} type="submit" onClick={(e) => { }}>Send</button>
+                    <button disabled={!formValid} type="submit">Send</button>
                 </form>
                 <section>
                     <h3 className="visually-hidden">Links</h3>

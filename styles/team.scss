@@ -87,10 +87,9 @@
 
 @media (max-width: $max-tablet-width) {
   .team.ui-section .container {
-    min-height: 706px;
     padding: 0;
     padding-top: 151px;
-    padding-bottom: 47px;
+    padding-bottom: 49px;
     transform: none;
   }
 
@@ -131,5 +130,10 @@
   .team ul {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .team  .ui-section__text {
+    padding: 0;
+    margin-bottom: 6px;
   }
 }

@@ -6,12 +6,12 @@ export default function Promo() {
     const [video, setVideo] = useState()
 
     useEffect(() => {
-      window.innerWidth > 320 
-      ? setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona.mp4")
-      : setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona_portrait.mp4")
-        
+        window.innerWidth > 320
+            ? setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona.mp4")
+            : setVideo("https://ik.imagekit.io/9uamvjevwkkw/simona_portrait.mp4")
+
     }, [])
-   
+
 
     function getChildrenOutOfContainer() {
         return <div className="ui-section__bg">
@@ -23,8 +23,14 @@ export default function Promo() {
         </div>
     }
 
+    const scrollToNextSection = () => {
+       
+    }
+
+   
     return (
         <UiSection
+            onScroll={scrollToNextSection}
             sectionClass="promo"
             buttonTitle="Get <br> started"
             buttonColor="#ffffff"

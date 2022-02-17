@@ -86,28 +86,28 @@
     .rocket__image--2 {
         width: 18%;
         height: 28%;
-        transform: translate(309%, 89%);
+        transform: translate(309%, 95%);
     }
 
     .rocket__image--3 {
          width: 18%;
         height: 28%;
-        transform: translate(407%, 89%);
+        transform: translate(407%, 95%);
     }
 
     .rocket__image--4 {
          width: 18%;
         height: 28%;
-        transform: translate(505%, 89%);
+        transform: translate(505%, 95%);
     }
 
     @keyframes rocketTransformate {
         0% {
-            transform: translate(0, 0);
+            transform: translate(7%, -2%);
         }
     
         100% {
-            transform: translate(0, -10%);
+            transform: translate(7%, -7%);
         }
     
     }

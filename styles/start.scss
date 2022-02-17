@@ -156,7 +156,8 @@
 
   .ui-section.start .container {
     padding-right: 0;
-    min-height: 676px;
+    padding-top: 127px;
+    padding-bottom: 20px;
     justify-content: flex-end;
   }
 
@@ -188,11 +189,12 @@
 
   .start .main-button {
     margin-top: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     margin-right: 20px;
   }
+
+  .start__image {
+    width: 220px;
+    height: 124px;
+  }
 }
-
-// @media (max-width: $max-mobile-width) {
-
-// }

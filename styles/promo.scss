@@ -80,15 +80,6 @@
     align-self: center;
   }
 
-  // .ui-section.promo .ui-section__wrapper {
-  //   margin-top: initial;
-  //   max-width: none;
-  //   z-index: 1;
-   
-  //   font-size: 20px;
-  //   line-height: 28px;
-  // }
-
   .ui-section.promo .ui-section__text {
     margin-bottom: 87px;
   }
@@ -102,7 +93,8 @@
   }
 
   .ui-section.promo .container {
-    min-height: 568px;
+    padding-top: 228px;
+    padding-bottom: 20px;
   }
 }
 

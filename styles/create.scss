@@ -8,9 +8,6 @@
   margin-bottom: 56px;
 }
 
-@media (max-width: $pre-desktop-width) {
-}
-
 @media (max-width: $max-tablet-width) {
   .create .ui-section__wrapper {
     margin-right: 0;
@@ -57,9 +54,7 @@
   }
 
   .ui-section.create .container {
-    min-height: 852px;
+    padding-top: 124px;
+    padding-bottom: 20px;
   }
-}
-
-@media (max-width: $max-mobile-width) {
 }

@@ -114,6 +114,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .ui-section__media {
@@ -146,5 +147,9 @@
 
   .ui-section h3 {
     width: 100%;
+  }
+
+  .ui-section .container  {
+    align-items: flex-start;
   }
 }

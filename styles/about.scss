@@ -41,10 +41,6 @@
   display: none;
 }
 
-@media (max-width: $pre-desktop-width) {
-
-}
-
 
 @media (max-width: $max-tablet-width) {
   .about .main-button br {
@@ -52,9 +48,8 @@
   }
 
   .about .container {
-    min-height: 1130px;
     padding-top: 147px;
-    align-items: center;
+    padding-bottom: 20px;
   }
 
 
@@ -69,7 +64,7 @@
 
   .about .main-button {
     margin-left: 0;
-    margin-bottom: 42px;
+    margin-bottom: 0;
     order: 2;
   }
 
@@ -81,7 +76,7 @@
     margin-top: 70px;
     display: block;
     order: 1;
-    margin-bottom: 26px;
+    margin-bottom: 54px;
     align-self: center;
   }
 
@@ -106,10 +101,11 @@
 
 @media (max-width: $max-mobile-width) {
   .about .main-button {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .about .container {
     justify-content: flex-start;
+    align-items: flex-start;
   }
 }
