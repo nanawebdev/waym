@@ -10,34 +10,27 @@ import React, { useEffect, useState } from 'react'
 import WheelIndicator from 'wheel-indicator'
 
 export default function Home() {
-  const [wheelIndicatorObject, setWheelIndicatorObject] = useState()
 
   useEffect(() => {
-
-    window.innerWidth > 1200 
-     ? setWheelIndicatorObject(new WheelIndicator({
-      elem: document,
-      callback: function (e) {
-        console.log(e.direction) // "up" or "down"
-        if (e.direction === 'down') {
-          // wheelIndicator.setOptions({'preventMouse': false})
-          window.scrollTo(0, window.innerHeight)
-        }
-
-        if (e.direction === 'up') {
-          window.scrollTo(0,  window.scrollY - window.innerHeight)
-        }
-
-        if (e.direction === 'down' && window.scrollY > window.innerHeight) {
-          window.scrollTo(0,  window.scrollY + window.innerHeight)
-        }
-      },
-      preventMouse: false
-    }))
-    : null
+    if (window.innerWidth > 1200 ) {
+      new WheelIndicator({
+        elem: document,
+        callback: function (e) {
+          if (e.direction === 'down' && window.scrollY < window.innerHeight) {
+            window.scrollTo(0, window.innerHeight)
+            return
+          }
+  
+          if (e.direction === 'up' && window.scrollY <= window.innerHeight) {
+            window.scrollTo(0,  0)
+            return
+          }
+        },
+        preventMouse: false
+      })
+    }
 
     // window.addEventListener('scroll', handleScroll)
-
   }, [])
 
 
