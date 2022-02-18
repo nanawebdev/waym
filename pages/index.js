@@ -16,7 +16,7 @@ export default function Home() {
   const router = useRouter()
 
   useEffect(() => {
-    if (router.pathname === '/') {
+    if (router.pathname === '/waym') {
       indicator = new WheelIndicator({
         elem: document,
         callback: function (e) {
