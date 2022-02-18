@@ -3,9 +3,10 @@ import Cross from "./../public/cross.svg"
 import AppStore from "./../public/ios-circle.svg"
 import GoogleStore from "./../public/gp-circle.svg"
 
-export default function MobileMenu({ closeMenuFunc }) {
+export default function MobileMenu({ closeMenuFunc, cls }) {
+   
     return (
-        <div className="mobile-menu">
+        <div className={`mobile-menu ${cls}`}>
             <div className="mobile-menu__buttons">
                 <div className="mobile-menu__socials">
                     <a href="https://apps.apple.com/ru/app/waym/id1584818031" target="_blank">

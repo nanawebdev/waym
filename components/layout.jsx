@@ -6,14 +6,14 @@ import MobileMenu from './mobileMenu'
 
 export default function Layout({ children }) {
     const [mode, setMode] = useState()
-    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const [classNemu, setClassMenu] = useState('')
 
     const openMobileMenu = () => {
-        setMenuIsOpen(true)
+        setClassMenu('visible')
     }
 
     const closeMobileMenu = () => {
-        setMenuIsOpen(false)
+        setClassMenu('')
     }
 
     useEffect(() => {
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
                     </main>
                 </div>
                 <Footer />
-                {menuIsOpen && <MobileMenu closeMenuFunc={closeMobileMenu} />}
+                <MobileMenu closeMenuFunc={closeMobileMenu} cls={classNemu} />
             </div>
         </>
     )

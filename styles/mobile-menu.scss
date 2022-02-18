@@ -1,5 +1,5 @@
 .mobile-menu {
-    position: fixed;
+    position: absolute;
     background-color: $primary-dark;
     top: 0;
     left: 0;
@@ -7,7 +7,15 @@
     right: 0;
     z-index: 100;
     padding-left: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.mobile-menu.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .mobile-menu li {
