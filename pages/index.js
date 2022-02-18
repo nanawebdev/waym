@@ -8,31 +8,35 @@ import Start from '../components/start'
 import Team from '../components/team'
 import React, { useEffect } from 'react'
 import WheelIndicator from 'wheel-indicator'
+import { useRouter } from 'next/router'
 
 let indicator = null
 
 export default function Home() {
+  const router = useRouter()
 
   useEffect(() => {
+    if (router.pathname === '/') {
       indicator = new WheelIndicator({
         elem: document,
         callback: function (e) {
           if (e.direction === 'down' && window.scrollY < window.innerHeight) {
-            indicator.setOptions({preventMouse: true})
+            indicator.setOptions({ preventMouse: true })
             window.scrollTo(0, window.innerHeight)
             return
           }
-  
+
           if (e.direction === 'up' && window.scrollY <= window.innerHeight) {
-            indicator.setOptions({preventMouse: true})
-            window.scrollTo(0,  0)
+            indicator.setOptions({ preventMouse: true })
+            window.scrollTo(0, 0)
             return
           }
 
-          indicator.setOptions({preventMouse: false})
+          indicator.setOptions({ preventMouse: false })
         },
         preventMouse: true
       })
+    }
   }, [])
 
 

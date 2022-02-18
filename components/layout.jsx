@@ -3,10 +3,10 @@ import Footer from './footer'
 import Header from './header'
 import MobileMenu from './mobileMenu'
 
-
 export default function Layout({ children }) {
     const [mode, setMode] = useState()
     const [classNemu, setClassMenu] = useState('')
+   
 
     const openMobileMenu = () => {
         setClassMenu('visible')

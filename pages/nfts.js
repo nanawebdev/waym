@@ -1,7 +1,7 @@
 import Layout from "../components/layout"
 import MainButton from "../components/mainButton"
 import Modal from "../components/modal"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Play from "./../public/play.svg"
 import Loader from "../components/loader"
 
