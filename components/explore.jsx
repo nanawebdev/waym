@@ -4,7 +4,10 @@ import UiVideo from "./uiVideo";
 export default function Explore() {
   const getChildrenOutOfContainer = () => {
     return <div className="ui-section__bg">
-      <UiVideo src="https://ik.imagekit.io/9uamvjevwkkw/hyperreality_land.m4v" />
+      <UiVideo 
+        horizontal="https://ik.imagekit.io/9uamvjevwkkw/hyperreality_land.m4v"
+        vertical="https://ik.imagekit.io/9uamvjevwkkw/hyperreality_portrait.mp4"
+       />
     </div>
 
   }

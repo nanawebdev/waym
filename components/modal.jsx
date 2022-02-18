@@ -1,4 +1,3 @@
-// import UiVideo from "./uiVideo";
 import Cross from "./../public/cross.svg"
 
 export default function Modal({ videoSrc, closeModal }) {
