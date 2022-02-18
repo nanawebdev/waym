@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/waym' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/waym/' : '/',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,

@@ -8,15 +8,15 @@ import Start from '../components/start'
 import Team from '../components/team'
 import React, { useEffect } from 'react'
 import WheelIndicator from 'wheel-indicator'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 
 let indicator = null
 
 export default function Home() {
-  const router = useRouter()
+  // const router = useRouter()
 
   useEffect(() => {
-    if (router.pathname === '/waym') {
+    // if (router.pathname === '/') {
       indicator = new WheelIndicator({
         elem: document,
         callback: function (e) {
@@ -36,7 +36,7 @@ export default function Home() {
         },
         preventMouse: true
       })
-    }
+    // }
   }, [])
 
 
