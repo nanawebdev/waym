@@ -1,3 +1,5 @@
+import { useRouter } from "next/router"
+
 export default function Team() {
     const team = [
         { id: 1, name: 'Svyatozar Minin', job: 'CEO', description: '8 years of experience in programming and PM', imgSrc: './Minin.jpg', greenImg: './Minin-green.jpg', link: 'https://t.me/svyatozar' },
@@ -6,13 +8,15 @@ export default function Team() {
         { id: 4, name: 'Ilnurri Zakiryanov', job: 'DEO', description: '8 years of design', imgSrc: './iz.jpg', greenImg: './iz-green.jpg', link: 'https://t.me/ilnurri' },
     ]
     const renderTeam = () => {
+        const { basePath } = useRouter()
+
         return team.map(v => {
             return (
                 <li key={v.id}>
                     <a href={v.link} target="_blank">
                         <div className="team__img">
-                            <img src={v.greenImg} alt={v.name} />
-                            <img src={v.imgSrc} alt={v.name} />
+                            <img src= {`${basePath}/${v.greenImg}`} alt={v.name} />
+                            <img src={`${basePath}/${v.imgSrc}`} alt={v.name} />
                         </div>
                         <h4>{v.name}</h4>
                         <p className='ui-section__text'>{v.job}</p>

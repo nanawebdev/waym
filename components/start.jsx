@@ -1,4 +1,5 @@
 import MainButton from './mainButton'
+import { useRouter } from "next/router"
 
 export default function Start() {
     const quests = [
@@ -8,13 +9,13 @@ export default function Start() {
         { id: 4, title: 'Quest Name', description: 'Пока менестрели слагают баллады о прекрасных дамах, а рыцари бьются на турни...', imgSrc: './quest-4.jpg' },
     ]
     const renderQuestCard = () => {
+        const { basePath } = useRouter()
+
         return quests.map(v => {
             return (
                 <li key={v.id}>
-
-
                     <div className="start__image">
-                        <img src={v.imgSrc} width={230} height={132} alt={v.title} />
+                        <img src={`${basePath}/${v.imgSrc}`} width={230} height={132} alt={v.title} />
                     </div>
                     <div className="start__text-border">
                         <div className="start__text">
