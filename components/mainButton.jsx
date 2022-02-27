@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
-export default function MainButton({ title, href, color, mobileTitle }) {
+export default function MainButton({ title, href, color, mobileTitle, isLocal = false }) {
     const [mode, setMode] = useState()
 
     let currentTitle = title
@@ -22,10 +23,18 @@ export default function MainButton({ title, href, color, mobileTitle }) {
         currentTitle = title
     }
 
+    const renderLink = () => {
+        if (isLocal) {
+            return <Link href={href}>{<a dangerouslySetInnerHTML={{ __html: currentTitle }}></a>}</Link>
+        }
+
+        return <a href={href} dangerouslySetInnerHTML={{ __html: currentTitle }} target="_blank"></a>
+    }
+
 
     return (
         <div className="main-button">
-            <a href={href} dangerouslySetInnerHTML={{ __html: currentTitle }} target="_blank"></a>
+            { renderLink() }
             <svg className="main-button__bg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="160" height="160" rx="80" fill="#000B29" />
                 <rect x="8" y="8" width="144" height="144" rx="72" stroke="url(#pattern-cta)" strokeOpacity="0.25" strokeWidth="16" />

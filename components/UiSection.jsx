@@ -5,6 +5,7 @@ export default function UiSection({
     buttonTitle,
     buttonColor,
     buttonHref,
+    isButtonHrefLocal = false,
     children,
     sectionClass,
     title,
@@ -47,6 +48,7 @@ export default function UiSection({
                     title={buttonTitle}
                     color={buttonColor}
                     href={buttonHref}
+                    isLocal={isButtonHrefLocal}
                 />
             </div>
         </section>

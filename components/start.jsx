@@ -41,7 +41,7 @@ export default function Start() {
                 <ul>
                     {renderQuestCard()}
                 </ul>
-                <MainButton title="See <br> more" stroke="#00D0FF" href="#" />
+                <MainButton title="See <br> more" stroke="#00D0FF" href="https://web.waym.app/quests" />
             </div>
 
 
